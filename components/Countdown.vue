@@ -24,8 +24,6 @@
 </template>
 
 <style>
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
-
 .circle {
   margin: 20px;
 }
@@ -36,9 +34,8 @@
 }
 
 .text {
-  color: #1abc9c;
+  color: rgb(225, 53, 102);
   font-size: 40px;
-  font-family: "Roboto Condensed", serif;
   font-weight: 40;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -49,7 +46,6 @@
   color: #30cff7;
   font-size: 150px;
   font-weight: 100;
-  font-family: "Roboto", serif;
   margin: 10px;
   text-align: center;
 }

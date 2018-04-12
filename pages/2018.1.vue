@@ -37,10 +37,31 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .page {
   min-height: 100vh;
+  min-width: 100vw;
   justify-content: center;
   align-items: center;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 16px;
+//   }
+// }
+
+// @include media-breakpoint-up(xl) {
+//   html {
+//     font-size: 1.5vmax;
+//   }
+// }
+.container-fluid {
+  padding: 0;
 }
 </style>

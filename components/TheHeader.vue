@@ -8,10 +8,12 @@
 <style>
 .header {
   justify-content: center;
+  height: 100vh;
   align-items: center;
   align-self: center;
   text-align: center;
   padding-top: 4em;
+  background-color: #bce4f5;
 }
 </style>
 
