@@ -5,7 +5,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .header {
   justify-content: center;
   height: 100vh;
@@ -14,6 +14,10 @@
   text-align: center;
   padding-top: 4em;
   background-color: #bce4f5;
+
+  h1 {
+    font-size: 4em;
+  }
 }
 </style>
 

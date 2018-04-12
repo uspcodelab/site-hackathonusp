@@ -2,22 +2,30 @@
   <b-row class="countdown-container">
     <b-col class="circle days">
       <!-- <p class="digits">{{ days }}</p> -->
-      <p>Testing</p>
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+      </svg>
       <p class="text">Days</p>
     </b-col>
     <b-col class="circle hours">
       <!-- <p class="digits">{{ hours }}</p> -->
-      <p>testing</p>
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+      </svg>
       <p class="text">Hours</p>
     </b-col>
     <b-col class="circle minutes">
       <!-- <p class="digits">{{ minutes }}</p> -->
-      <p>testing</p>
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+      </svg>
       <p class="text">Minutes</p>
     </b-col>
     <b-col class="circle seconds">
       <!-- <p class="digits">{{ seconds }}</p> -->
-      <p>testing</p>
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+      </svg>
       <p class="text">Seconds</p>
     </b-col>
   </b-row>
@@ -30,7 +38,7 @@
 
 .countdown-container {
   align-self: flex-end;
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .text {
