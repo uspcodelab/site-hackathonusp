@@ -1,35 +1,38 @@
 <template>
-  <div>
-    <div class="circle days">
+  <b-row class="countdown-container">
+    <b-col class="circle days">
       <!-- <p class="digits">{{ days }}</p> -->
       <p>Testing</p>
       <p class="text">Days</p>
-    </div>
-    <div class="circle hours">
+    </b-col>
+    <b-col class="circle hours">
       <!-- <p class="digits">{{ hours }}</p> -->
       <p>testing</p>
       <p class="text">Hours</p>
-    </div>
-    <div class="circle minutes">
+    </b-col>
+    <b-col class="circle minutes">
       <!-- <p class="digits">{{ minutes }}</p> -->
       <p>testing</p>
       <p class="text">Minutes</p>
-    </div>
-    <div class="circle seconds">
+    </b-col>
+    <b-col class="circle seconds">
       <!-- <p class="digits">{{ seconds }}</p> -->
       <p>testing</p>
       <p class="text">Seconds</p>
-    </div>
-  </div>
+    </b-col>
+  </b-row>
 </template>
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
 
 .circle {
-  display: flex;
-  flex-direction: column;
   margin: 20px;
+}
+
+.countdown-container {
+  align-self: flex-end;
+  padding-top: 30vh;
 }
 
 .text {

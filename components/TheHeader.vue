@@ -7,9 +7,10 @@
 
 <style>
 .header {
-  display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
   padding-top: 4em;
 }
 </style>

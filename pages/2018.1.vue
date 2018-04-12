@@ -2,8 +2,7 @@
   <div class="page">
     <b-container fluid>
       <the-header/>
-      <!-- <main/>
-      <the-footer/> -->
+      <footer/>
     </b-container>
   </div>
 </template>
@@ -11,11 +10,13 @@
 <script>
 import Countdown from "~/components/Countdown.vue";
 import TheHeader from "~/components/TheHeader.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
     Countdown,
-    TheHeader
+    TheHeader,
+    Footer
   }
 };
 </script>
@@ -25,6 +26,5 @@ export default {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 </style>
