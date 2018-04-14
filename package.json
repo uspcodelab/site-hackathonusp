@@ -20,18 +20,18 @@
     "nuxt": "^1.0.0",
     "nuxt-sass-resources-loader": "^1.2.0",
     "vue-scrollto": "^2.10.0"
-},
-"devDependencies": {
-  "babel-eslint": "^8.2.1",
-  "cross-env": "^5.0.1",
-  "eslint": "^4.15.0",
-  "eslint-config-prettier": "^2.9.0",
-  "eslint-loader": "^1.7.1",
-  "eslint-plugin-prettier": "^2.6.0",
-  "eslint-plugin-vue": "^4.0.0",
-  "node-sass": "^4.7.2",
-  "nodemon": "^1.11.0",
-  "prettier": "^1.10.2",
-  "sass-loader": "^6.0.6"
-}
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.10.2",
+    "sass-loader": "^6.0.6"
+  }
 }
