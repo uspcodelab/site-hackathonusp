@@ -5,7 +5,7 @@
       <main>
         <about/>
         <prizes/>
-        <!-- <sponsors/> -->
+        <sponsors/>
       </main>
       <footer/>
     </b-container>
@@ -18,7 +18,7 @@ import TheHeader from "~/components/TheHeader.vue";
 import Footer from "~/components/Footer.vue";
 import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
-// import Sponsors from "~/components/Sponsors.vue";
+import Sponsors from "~/components/Sponsors.vue";
 // import PastEvents from "~/components/PastEvents.vue";
 
 export default {
@@ -27,8 +27,8 @@ export default {
     TheHeader,
     Footer,
     About,
-    Prizes
-    // Sponsors,
+    Prizes,
+    Sponsors
     // PastEvents
   }
 };
