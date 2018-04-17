@@ -1,13 +1,13 @@
 <template>
   <div class="page">
     <b-container fluid>
-      <the-header/>
+      <the-header />
       <main>
-        <about/>
-        <prizes/>
-        <sponsors/>
+        <about />
+        <prizes />
+        <sponsors />
       </main>
-      <the-footer/>
+      <the-footer />
     </b-container>
   </div>
 </template>
