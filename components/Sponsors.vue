@@ -1,7 +1,7 @@
 <template>
   <b-row id="sponsors" tag="section">
     <b-col sm="12" class="py-2">
-      <h1 class="text-primary text-center pb-3" style="color: #55a6c9">
+      <h1 class="text-center pb-3" style="color: #55a5cb">
         Realização
       </h1>
     </b-col>
@@ -12,7 +12,7 @@
       <img src="~/assets/neu-logo.png" alt="Nucleo de Empreendedorismo da USP" style="height: 15vh">
     </b-col>
     <b-col sm="12" class="py-2">
-      <h3 class="text-primary text-center pb-3">
+      <h3 class="text-center pb-3" style="color: #55a5cb">
         Patrocínio
       </h3>
     </b-col>

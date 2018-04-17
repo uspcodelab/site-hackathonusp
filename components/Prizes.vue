@@ -1,7 +1,7 @@
 <template>
   <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
     <b-col sm="12" class="py-2">
-      <h1 class="text-primary text-center pb-3" style="color: #55a6c9">
+      <h1 class="text-center pb-3" style="color: #55a5cb">
         Prêmios
       </h1>
     </b-col>
