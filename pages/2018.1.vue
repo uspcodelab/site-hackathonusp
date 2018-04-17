@@ -6,6 +6,7 @@
         <about />
         <prizes />
         <sponsors />
+        <past-events />
       </main>
       <the-footer />
     </b-container>
@@ -19,7 +20,7 @@ import TheFooter from "~/components/TheFooter.vue";
 import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
 import Sponsors from "~/components/Sponsors.vue";
-// import PastEvents from "~/components/PastEvents.vue";
+import PastEvents from "~/components/PastEvents.vue";
 
 export default {
   components: {
@@ -28,8 +29,8 @@ export default {
     TheFooter,
     About,
     Prizes,
-    Sponsors
-    // PastEvents
+    Sponsors,
+    PastEvents
   }
 };
 </script>
