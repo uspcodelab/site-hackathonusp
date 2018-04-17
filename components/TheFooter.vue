@@ -1,30 +1,15 @@
 <template>
-  <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 bg-dark text-white">
+  <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
     <b-col class="footer__about pb-3 pb-sm-0">
-      <!-- <img src="~/assets/logos/ucl-logo-wb-alpha.svg" class="footer__about__logo"> -->
-      <p class="footer__about__description text-center">
-        Estimulando a inovação tecnológica na USP
-      </p>
+      <img src="~/assets/ucl-logo-colored-alpha.svg" class="footer__about__logo">
     </b-col>
 
     <b-col class="footer__social">
       <p class="footer__social__description text-center">
-        Encontre-nos nas redes sociais!
+        Confirme presença no evento!
       </p>
       <a href="https://facebook.com/uspcodelab/">
         <span class="fa fa-facebook mx-2"/>
-      </a>
-      <a href="https://github.com/uspcodelab">
-        <span class="fa fa-github mx-2"/>
-      </a>
-      <a href="https://gitlab.com/uspcodelab/">
-        <span class="fa fa-gitlab mx-2"/>
-      </a>
-      <a href="http://bit.ly/uspcodelab_tg">
-        <span class="fa fa-telegram mx-2"/>
-      </a>
-      <a href="mailto:codelab@ime.usp.br">
-        <span class="fa fa-envelope mx-2"/>
       </a>
     </b-col>
   </b-row>
@@ -36,8 +21,8 @@ a:hover {
 }
 
 .footer {
-  color: theme-color("light");
-  background-color: theme-color("dark");
+  color: #55a5cb;
+  background-color: #55a5cb;
 
   &__about {
     display: flex;
