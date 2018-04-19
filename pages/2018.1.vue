@@ -4,8 +4,8 @@
     <b-container fluid>
       <the-header />
       <main>
-        <about />
-        <prizes />
+        <!-- <about />
+        <prizes /> -->
         <sponsors />
         <past-events />
       </main>
@@ -22,7 +22,6 @@ import TheFooter from "~/components/TheFooter.vue";
 import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
 import Sponsors from "~/components/Sponsors.vue";
-import PastEvents from "~/components/PastEvents.vue";
 
 export default {
   components: {
@@ -32,8 +31,7 @@ export default {
     TheFooter,
     About,
     Prizes,
-    Sponsors,
-    PastEvents
+    Sponsors
   }
 };
 </script>
@@ -41,6 +39,7 @@ export default {
 <style lang="scss">
 .page {
   margin: 0;
+  padding-top: 4rem;
 }
 
 html {

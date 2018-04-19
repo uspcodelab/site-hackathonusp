@@ -1,6 +1,7 @@
 <template>
+  <div/>
 </template>
-
+  
 <style>
 /*
 ROSA:
