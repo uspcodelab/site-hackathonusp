@@ -1,12 +1,12 @@
 <template>
-  <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
+  <b-row id="prizes" tag="section" class="px-3 py-5 px-sm-5">
     <b-col sm="12" class="py-2">
-      <h1 class="text-center pb-3" style="color: #55a5cb">
+      <h1 class="text-center pb-3">
         Prêmios
       </h1>
     </b-col>
 
-    <b-col sm="12" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="12" class=" py-3 p-md-2">
       <!-- <b-card body-bg-variant="light" class="text-center">
         <span class="fa fa-plane mx-2"/>
         <h3 class="dev-journey-phase">1˚ Lugar</h3>
@@ -26,18 +26,18 @@
       </b-card>
     </b-col>
 
-    <b-col sm="12" md="12" lg="6" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="12" md="12" lg="6" class=" py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <h3 class="dev-journey-phase">2˚ Lugar</h3>
+        <h3>2˚ Lugar</h3>
         Grupos de estudo com reuniões semanais, ao longo
         de um semestre, para aplicar os conhecimentos
         em projetos propostos pela organização
       </b-card>
     </b-col>
 
-    <b-col sm="12" md="12" lg="6" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="12" md="12" lg="6" class="py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <h3 class="dev-journey-phase">3˚ Lugar</h3>
+        <h3>3˚ Lugar</h3>
         Grupo de estudos avançado, com projetos em times
         para aprendizado de técnicas de modelagem,
         implementação e manutenção de sistemas
@@ -47,7 +47,12 @@
 </template>
 
 <style lang="scss">
+#prizes {
+  background-color: #00b2ff;
+}
+
 h1 {
+  color: #fff;
   font-size: 4em;
 }
 </style>

@@ -5,8 +5,13 @@
         HackathonUSP 2018
       </h1>
       <p class="lead text-center text-md-left">
-        Grupo de extensão universitária que tem como objetivo
-        <strong>estimular a inovação tecnológica na USP</strong>
+        Aplicando <strong>Ciência de Dados</strong> para melhorar o dia-a-dia universitário
+      </p>
+      <p class="lead text-center text-md-left">
+        <strong>8</strong> e <strong>9</strong> de <strong>junho</strong>
+      </p>
+      <p class="lead text-center text-md-left">
+        <strong>Instituto de Matemática e Estatística</strong>
       </p>
     </b-col>
     <b-col sm="6" class="header__logo pb-4 pb-sm-0">
@@ -20,7 +25,36 @@
   min-height: calc(100vh);
   align-items: center;
   text-align: center;
-  background-color: #bce4f5;
+
+  background-image: linear-gradient(#ff3c5b, #ff0049);
+  color: white;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__img {
+      max-height: 70vh;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+      font-family: Montserrat, sans;
+      font-weight: 600;
+    }
+
+    p.lead strong {
+      font-weight: bold;
+    }
+  }
 }
 </style>
 

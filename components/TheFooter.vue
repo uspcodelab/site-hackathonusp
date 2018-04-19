@@ -2,7 +2,7 @@
   <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
     <b-col class="footer__about pb-3 pb-sm-0">
       <a href="https://codelab.ime.usp.br/" target="_blank">
-        <img src="~/assets/ucl-logo-colored-alpha.svg" class="footer__about__logo">
+        <img src="~/assets/ucl-logo-wb-alpha.svg" class="footer__about__logo">
       </a>
     </b-col>
 
