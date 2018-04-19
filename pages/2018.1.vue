@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <the-navbar/>
     <b-container fluid>
       <the-header />
       <main>
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import TheNavbar from "~/components/Navbar.vue";
 import Countdown from "~/components/Countdown.vue";
 import TheHeader from "~/components/TheHeader.vue";
 import TheFooter from "~/components/TheFooter.vue";
@@ -24,6 +26,7 @@ import PastEvents from "~/components/PastEvents.vue";
 
 export default {
   components: {
+    TheNavbar,
     Countdown,
     TheHeader,
     TheFooter,
