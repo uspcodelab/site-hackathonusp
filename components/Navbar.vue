@@ -1,14 +1,14 @@
 <template>
   <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
     <b-navbar-brand v-scroll-to="'#header'">
-      <img src="~/assets/ucl-logo-colored-alpha.svg" alt="USPCodeLab" class="navbar__logo">
+      <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo" class="navbar__logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse id="nav_dropdown_collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item v-scroll-to="'#dev-journey'">dev.journey()</b-nav-item>
-        <b-nav-item v-scroll-to="'#code-schools'">CodeSchools</b-nav-item>
-        <b-nav-item v-scroll-to="'#hackathon-usp'">HackathonUSP</b-nav-item>
+        <b-nav-item v-scroll-to="'#about'">HackathonUSP</b-nav-item>
+        <b-nav-item v-scroll-to="'#prizes'">Prêmios</b-nav-item>
+        <b-nav-item v-scroll-to="'#sponsors'">Patrocinadores</b-nav-item>
         <b-nav-item v-scroll-to="'#footer'">Contato</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
