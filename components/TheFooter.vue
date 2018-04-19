@@ -1,14 +1,22 @@
 <template>
   <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
     <b-col class="footer__about pb-3 pb-sm-0">
-      <img src="~/assets/ucl-logo-colored-alpha.svg" class="footer__about__logo">
+      <a href="https://codelab.ime.usp.br/" target="_blank">
+        <img src="~/assets/ucl-logo-colored-alpha.svg" class="footer__about__logo">
+      </a>
+    </b-col>
+
+    <b-col class="footer__about pb-3 pb-sm-0">
+      <a href="http://www.uspempreende.org/" target="_blank">
+        <img src="~/assets/neu-logo.png" class="footer__about__neu_logo">
+      </a>
     </b-col>
 
     <b-col class="footer__social">
       <p class="footer__social__description text-center">
         Confirme presença no evento!
       </p>
-      <a href="https://facebook.com/uspcodelab/">
+      <a href="https://facebook.com/uspcodelab/" target="_blank">
         <span class="fa fa-facebook mx-2"/>
       </a>
     </b-col>
@@ -21,8 +29,8 @@ a:hover {
 }
 
 .footer {
-  color: #55a5cb;
-  background-color: #55a5cb;
+  color: #fff;
+  background-color: #292827;
 
   &__about {
     display: flex;
@@ -32,6 +40,10 @@ a:hover {
 
     &__logo {
       height: 4rem;
+    }
+
+    &__neu_logo {
+      height: 8rem;
     }
 
     &__description {
