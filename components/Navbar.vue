@@ -1,19 +1,12 @@
 <template>
-  <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
-    <b-navbar-brand v-scroll-to="'#header'">
+  <b-row tag="nav" class="text-center">
+    <b-col sm="6">
       <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo" class="navbar__logo">
-    </b-navbar-brand>
-    <b-navbar-toggle target="nav_dropdown_collapse"/>
-    <b-collapse id="nav_dropdown_collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item v-scroll-to="'#header'">HackathonUSP 2018</b-nav-item>
-        <b-nav-item v-scroll-to="'#about'">Tema</b-nav-item>
-        <b-nav-item v-scroll-to="'#prizes'">Prêmios</b-nav-item>
-        <b-nav-item v-scroll-to="'#sponsors'">Patrocinadores</b-nav-item>
-        <b-nav-item v-scroll-to="'#footer'">Contato</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+    </b-col>
+    <b-col sm="6" class="nav-text" style="display: flex; align-items: center;">
+      <h3>HackathonUSP 2018</h3>
+    </b-col>
+  </b-row>
 </template>
 
 <style lang="scss">
@@ -23,7 +16,11 @@
   font-size: 1em;
 
   &__logo {
-    height: 4rem;
+    max-height: 4rem;
+  }
+  &__nav-text {
+    display: flex;
+    align-items: center;
   }
 }
 </style>
