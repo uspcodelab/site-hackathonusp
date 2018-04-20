@@ -26,8 +26,13 @@
   align-items: center;
   text-align: center;
 
-  background-image: linear-gradient(#ff3c5b, #ff0049);
+  background-image: linear-gradient(#ff3c58, #ff2a49);
   color: white;
+
+  h1 {
+    font-family: Montserrat, sans;
+    font-weight: 600;
+  }
 
   &__logo {
     display: flex;
