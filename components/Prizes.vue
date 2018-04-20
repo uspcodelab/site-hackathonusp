@@ -1,6 +1,6 @@
 <template>
   <b-row id="prizes" tag="section" class="px-3 py-5 px-sm-5">
-    <b-col sm="12" class="py-2">
+    <b-col sm="12" class="py-5">
       <h1 class="text-center pb-3">
         Prêmios
       </h1>
@@ -15,8 +15,6 @@
         como HTML, CSS e JavaScript
       </b-card> -->
       <b-card border-variant="light"
-              img-src="~/assets/stanford-logo.png"
-              img-alt="Stanford University"
               img-bottom>
         <h3 class="text-center">1˚ Lugar</h3>
         <p class="text-center">

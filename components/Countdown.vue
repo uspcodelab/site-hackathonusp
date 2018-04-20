@@ -6,33 +6,33 @@
     <b-col sm="12" md="6" lg="3" class="circle days text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
         <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.3em">{{ Math.trunc(days) }}</text>
+        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(days) }}</text>
       </svg>
       <p class="text">Dias</p>
     </b-col>
     <b-col sm="12" md="6" lg="3" class="circle hours text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
         <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.3em">{{ Math.trunc(hours) }}</text>
+        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(hours) }}</text>
       </svg>
       <p class="text">Horas</p>
     </b-col>
     <b-col sm="12" md="6" lg="3" class="circle minutes text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
         <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.3em">{{ Math.trunc(minutes) }}</text>
+        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(minutes) }}</text>
       </svg>
       <p class="text">Minutos</p>
     </b-col>
     <b-col sm="12" md="6" lg="3" class="circle seconds text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
         <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.3em">{{ Math.trunc(seconds) }}</text>
+        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(seconds) }}</text>
       </svg>
       <p class="text">Segundos</p>
     </b-col>
-    <b-col sm="12" class="text-center pt-5 arrow">
-      <img src="~/assets/down-arrow.svg" alt="" style="max-height: 5vh">
+    <b-col sm="12" class="text-center pt-5">
+      <img v-scroll-to="'#header'" src="~/assets/down-arrow.svg" alt="" style="max-height: 5vh; cursor: pointer;">
     </b-col>
   </b-row>
 </template>

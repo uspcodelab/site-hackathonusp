@@ -61,6 +61,30 @@
     }
   }
 }
+
+@include media-breakpoint-up(md) {
+  .header__logo {
+    order: 2;
+    justify-content: center;
+
+    &__img {
+      min-width: 0;
+      width: 90%;
+    }
+  }
+
+  .header__text {
+    order: 1;
+    align-items: left;
+    justify-content: center;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .header__logo__img {
+    width: 70%;
+  }
+}
 </style>
 
 <script>
