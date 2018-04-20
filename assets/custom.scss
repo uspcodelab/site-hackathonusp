@@ -1,5 +1,5 @@
-$primary-color: #55a6c9;
-$seconddary-color: #e13566;
+$secondary-color: #55a6c9;
+$primary-color: #e13566;
 
 $theme-colors: (
   "primary": $primary-color,
@@ -12,5 +12,5 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 @font-face {
   font-family: Montserrat;
   font-weight: normal;
-  src: url("~/static/Montserrat-Regular.otf");
+  src: url("/Montserrat-Regular.otf");
 }
