@@ -5,7 +5,7 @@
       <countdown date="June, 09, 2018"/>
       <the-header />
       <main>
-        <!-- <about /> -->
+        <about />
         <prizes />
         <sponsors />
         <past-events />
@@ -38,27 +38,27 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/Montserrat-Regular.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: normal;
+//   src: url("/Montserrat-Regular.otf");
+// }
 
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url("/Montserrat-Medium.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: 600;
+//   src: url("/Montserrat-Medium.otf");
+// }
 
-@font-face {
-  font-family: Montserrat;
-  font-weight: bold;
-  src: url("/Montserrat-Bold.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: bold;
+//   src: url("/Montserrat-Bold.otf");
+// }
 .container-fluid {
   padding: 0;
   margin: 0;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
+  // font-family: "IBM Plex Sans Condensed", sans-serif;
   // font-family: 'Open Sans', sans-serif;
   // font-family: 'Nunito', sans-serif;
   // font-family: 'Cabin', sans-serif;
