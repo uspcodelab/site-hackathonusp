@@ -5,15 +5,7 @@
         Prêmios
       </h1>
     </b-col>
-
     <b-col sm="12" class=" py-3 p-md-2">
-      <!-- <b-card body-bg-variant="light" class="text-center">
-        <span class="fa fa-plane mx-2"/>
-        <h3 class="dev-journey-phase">1˚ Lugar</h3>
-        Ciclo de oficinas para apresentar programação web
-        para o público geral da universidade, com tópicos
-        como HTML, CSS e JavaScript
-      </b-card> -->
       <b-card border-variant="light"
               img-bottom>
         <h3 class="text-center">1˚ Lugar</h3>
