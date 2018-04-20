@@ -84,6 +84,10 @@
   dependencies:
     font-awesome "^4.7.0"
 
+"@nuxtjs/redirect-module@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/redirect-module/-/redirect-module-0.0.1.tgz#5bdf226cb46e2ed94519f7d39f209f8b739223ad"
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
