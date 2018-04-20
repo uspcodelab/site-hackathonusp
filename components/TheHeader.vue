@@ -1,6 +1,6 @@
 <template>
-  <b-row id="header" tag="section" class="header p-3 p-sm-5">
-    <b-col sm="6" class="header__text">
+  <b-row id="header" tag="section" class="header px-3 py-5 px-sm-5">
+    <b-col sm="6" class="header__text py-5">
       <h1 class="text-center text-md-left pb-3">
         HackathonUSP 2018
       </h1>
@@ -14,7 +14,7 @@
         <strong>Instituto de Matemática e Estatística</strong>
       </p>
     </b-col>
-    <b-col sm="6" class="header__logo pb-4 pb-sm-0">
+    <b-col sm="6" class="header__logo pt-5 pb-sm-0">
       <img src="~/assets/hackathon-usp.svg" class="header__logo__img">
     </b-col>
   </b-row>
