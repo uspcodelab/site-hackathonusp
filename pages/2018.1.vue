@@ -62,7 +62,7 @@ export default {
   // font-family: 'Open Sans', sans-serif;
   // font-family: 'Nunito', sans-serif;
   // font-family: 'Cabin', sans-serif;
-  font-size: 1rem;
+  // font-size: 1rem;
 }
 
 // .section-title {
@@ -76,8 +76,24 @@ export default {
 //   // font-family: "IBM Plex Serif", serif;
 // }
 
+html {
+  font-size: 14px;
+}
+
 .page {
   margin: 0;
   padding-top: 4rem;
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 1.5vmax;
+  }
 }
 </style>
