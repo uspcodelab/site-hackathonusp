@@ -1,49 +1,62 @@
 <template>
-  <b-row class="countdown-container py-10">
-    <b-col sm="12" md="6" lg="3" class="circle days">
-      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
-      </svg>
-      <p class="text">Days</p>
+  <b-row class="countdown-container">
+    <b-col sm="12" class="text-center pb-5 text">
+      <h1>Incrições em breve!</h1>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle hours">
+    <b-col sm="12" md="6" lg="3" class="circle days text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
       </svg>
-      <p class="text">Hours</p>
+      <p class="text">Dias</p>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle minutes">
+    <b-col sm="12" md="6" lg="3" class="circle hours text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
       </svg>
-      <p class="text">Minutes</p>
+      <p class="text">Horas</p>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle seconds">
+    <b-col sm="12" md="6" lg="3" class="circle minutes text-center">
       <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
       </svg>
-      <p class="text">Seconds</p>
+      <p class="text">Minutos</p>
+    </b-col>
+    <b-col sm="12" md="6" lg="3" class="circle seconds text-center">
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
+      </svg>
+      <p class="text">Segundos</p>
+    </b-col>
+    <b-col sm="12" class="text-center mt-2">
+      <img src="~/assets/down-arrow.svg" alt="" style="max-height: 5vh">
     </b-col>
   </b-row>
 </template>
 
-<style>
+<style lang="scss">
 .countdown-container {
-  align-self: flex-end;
-  padding-top: 20vh;
+  padding-top: 4em;
+  min-height: 90vh;
+  align-content: center;
+  align-items: center;
+  background-color: #2a2827;
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo {
+    align-self: center;
+  }
 }
 
 .text {
-  color: rgb(225, 53, 102);
-  font-size: 40px;
-  font-weight: 40;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+  color: #e13566;
+  font-size: 2rem;
 }
 
 .digits {
-  color: #30cff7;
+  color: #000000;
   font-size: 150px;
   font-weight: 100;
   margin: 10px;
