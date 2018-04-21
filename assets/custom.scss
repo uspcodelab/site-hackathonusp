@@ -1,10 +1,40 @@
-$secondary-color: #55a6c9;
+/* Colors */
+
 $primary-color: #e13566;
+$secondary-color: #55a6c9;
 
 $theme-colors: (
   "primary": $primary-color,
   "accent": $secondary-color,
 );
+
+/* Media queries */
+
+$grid-breakpoints: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px,
+);
+
+$container-max-widths: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px,
+);
+
+/* Fonts */
 
 $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 

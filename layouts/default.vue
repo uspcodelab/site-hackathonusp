@@ -9,7 +9,7 @@ html {
   font-size: 14px;
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
   html {
     font-size: 16px;
   }
@@ -17,7 +17,19 @@ html {
 
 @include media-breakpoint-up(xl) {
   html {
-    font-size: 28px;
+    font-size: 18px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@include media-breakpoint-up(xxxl) {
+  html {
+    font-size: 42px;
   }
 }
 
