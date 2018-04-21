@@ -1,12 +1,13 @@
 <template>
   <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
     <b-navbar-brand v-scroll-to="'#header'">
-      <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo" class="navbar__logo">
+      <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo"
+           class="navbar__logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse id="nav_dropdown_collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item v-scroll-to="'#header'">HackathonUSP 2018</b-nav-item>
+        <b-nav-item v-scroll-to="'#header'">HackathonUSP</b-nav-item>
         <b-nav-item v-scroll-to="'#about'">Tema</b-nav-item>
         <b-nav-item v-scroll-to="'#prizes'">Prêmios</b-nav-item>
         <b-nav-item v-scroll-to="'#sponsors'">Patrocinadores</b-nav-item>

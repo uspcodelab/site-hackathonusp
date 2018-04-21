@@ -48,6 +48,7 @@ module.exports = {
     "@nuxtjs/font-awesome",
     "@nuxtjs/redirect-module"
   ],
+
   redirect: [{ from: "^/$", to: "/2018.1" }],
 
   /*
@@ -83,6 +84,7 @@ module.exports = {
       }
     }
   },
+
   sassResources: [
     "@/assets/custom.scss",
     "@/node_modules/bootstrap/scss/bootstrap.scss"

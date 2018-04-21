@@ -39,18 +39,21 @@
 
 <style lang="scss">
 .countdown-container {
-  padding-top: 4em;
+  padding-top: 4rem;
   min-height: 95vh;
   align-content: center;
   align-items: center;
   background-color: #2a2827;
+
   &__circle {
     display: flex;
     flex-direction: column;
   }
+
   &__logo {
     align-self: center;
   }
+
   &__arrow {
     align-items: flex-end;
   }
