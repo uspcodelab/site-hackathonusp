@@ -5,7 +5,7 @@
     </b-col>
 
     <b-col cols="12" class="countdown__clocks py-5 px-3 px-md-5">
-      <b-row>
+      <b-row class="fix">
         <b-col cols="6" md="3" class="countdown__clock">
           <svg width="8rem" height="8rem">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
@@ -174,5 +174,12 @@ export default {
       font-size: 1.6rem;
     }
   }
+}
+
+// For some reason, a row inside a row is creating a overflow of 2 pixels
+// that makes the screen slide. This class forces the inner row to have a
+// width no wider than the viewport.
+.fix {
+  max-width: 100vw;
 }
 </style>
