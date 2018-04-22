@@ -27,12 +27,6 @@ html {
   }
 }
 
-@include media-breakpoint-up(xxxl) {
-  html {
-    font-size: 42px;
-  }
-}
-
 .page {
   padding-top: $navbar-height;
 }
