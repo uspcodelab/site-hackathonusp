@@ -1,12 +1,12 @@
 <template>
-  <b-row class="countdown">
-    <b-col cols="12" class="countdown__text pt-5 px-3 px-md-5">
+  <b-row class="countdown py-5">
+    <b-col cols="12" class="countdown__text py-3 px-3 px-md-5">
       <h1 class="px-3">Incrições em breve!</h1>
     </b-col>
 
-    <b-col cols="12" class="countdown__clocks py-5 px-3 px-md-5">
+    <b-col cols="12" class="countdown__clocks py-3 px-3 px-md-5">
       <b-row class="fix">
-        <b-col cols="6" md="3" class="countdown__clock">
+        <b-col cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
@@ -17,10 +17,10 @@
               {{ days }}
             </text>
           </svg>
-          <p class="countdown__clock__text">Dias</p>
+          <div class="countdown__clock__text">Dias</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock">
+        <b-col cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
@@ -31,10 +31,10 @@
               {{ hours }}
             </text>
           </svg>
-          <p class="countdown__clock__text">Horas</p>
+          <div class="countdown__clock__text">Horas</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock">
+        <b-col cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
@@ -45,10 +45,10 @@
               {{ minutes }}
             </text>
           </svg>
-          <p class="countdown__clock__text">Minutos</p>
+          <div class="countdown__clock__text">Minutos</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock">
+        <b-col cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
@@ -59,12 +59,12 @@
               {{ seconds }}
             </text>
           </svg>
-          <p class="countdown__clock__text">Segundos</p>
+          <div class="countdown__clock__text">Segundos</div>
         </b-col>
       </b-row>
     </b-col>
 
-    <b-col cols="12" class="countdown__arrow pb-5">
+    <b-col cols="12" class="countdown__arrow py-3 px-3 px-md-5">
       <span class="h1">
         <span v-scroll-to="'#header'" class="fa fa-angle-down"/>
       </span>
