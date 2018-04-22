@@ -1,29 +1,58 @@
 <template>
-  <b-row id="sponsors" tag="section" class="px-3 py-5 px-sm-5">
-    <b-col sm="12" class="py-5">
-      <h1 class="text-primary text-center pb-3">
-        Realização
-      </h1>
+  <b-row id="sponsors" tag="section" class="text-center px-3 px-sm-5 py-5">
+
+    <b-col sm="12">
+      <b-row class="align-items-center">
+
+        <b-col sm="12">
+          <h1 class="text-primary pb-5">Organização</h1>
+        </b-col>
+
+        <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
+          <img src="@/assets/organizers/ucl-logo-rgb-alpha.svg"
+               class="w-100" alt="USPCodeLab">
+        </b-col>
+        <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
+          <img src="@/assets/organizers/hl-logo-rgb-alpha.svg"
+               class="w-100" alt="Hardware Livre USP">
+        </b-col>
+        <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
+          <img src="@/assets/organizers/neu-logo-rgb-alpha.png"
+               class="w-100" alt="Nucleo de Empreendedorismo da USP">
+        </b-col>
+
+      </b-row>
     </b-col>
-    <b-col sm="12" md="12" lg="6" class="text-center py-4">
-      <img src="~/assets/ucl-logo-colored-alpha.svg" alt="USPCodeLab">
+
+    <b-col class="align-items-center py-3">
+      <hr>
     </b-col>
-    <b-col sm="12" md="12" lg="6" class="text-center py-4">
-      <img src="~/assets/neu-logo.png" alt="Nucleo de Empreendedorismo da USP" style="height: auto; width:40%">
+
+    <b-col sm="12">
+      <b-row class="align-items-center">
+
+        <b-col sm="12">
+          <h1 class="text-secondary pb-5">Patrocínio</h1>
+        </b-col>
+
+        <b-col sm="6" class="px-5">
+          <img src="@/assets/sponsors/prp-logo-rgb-alpha.png"
+               class="w-100" alt="PRP-USP">
+        </b-col>
+        <b-col sm="6" class="px-5">
+          <img src="@/assets/sponsors/vtex-logo-rgb-alpha.svg"
+               class="w-100" alt="VTEX">
+        </b-col>
+
+      </b-row>
     </b-col>
-    <b-col sm="12" class="py-2">
-      <h3 class="text-center pb-3" style="color: #55a5cb">
-        Patrocínio
-      </h3>
-    </b-col>
-    <b-col sm="12" md="12" lg="6" class="text-center py-4">
-      <img src="~/assets/VTEX_Logo.svg" alt="VTex" style="width: 85%; height: auto">
-    </b-col>
-    <b-col sm="12" md="12" lg="6" class="text-center py-4">
-      <img src="~/assets/PRP-logo.png" alt="PRP-USP" style="width: 85%; height: auto">
-    </b-col>
+
   </b-row>
 </template>
 
-<style>
+<style lang="scss">
+#sponsors {
+  min-height: calc(100vh - #{$navbar-height});
+  background-color: theme-color("light");
+}
 </style>

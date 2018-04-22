@@ -1,17 +1,5 @@
 <template>
   <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
-    <b-col class="footer__about pb-3 pb-sm-0">
-      <a href="https://codelab.ime.usp.br/" target="_blank">
-        <img src="~/assets/ucl-logo-wb-alpha.svg" class="footer__about__logo">
-      </a>
-    </b-col>
-
-    <b-col class="footer__about pb-3 pb-sm-0">
-      <a href="http://www.uspempreende.org/" target="_blank">
-        <img src="~/assets/neu-logo.png" class="footer__about__neu_logo">
-      </a>
-    </b-col>
-
     <b-col class="footer__social">
       <p class="footer__social__description text-center">
         Confirme presença no evento!

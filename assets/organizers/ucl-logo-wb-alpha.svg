@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="71mm"
-   height="20mm"
-   viewBox="0 0 71 20"
+   width="512mm"
+   height="300mm"
+   viewBox="0 0 512 299.99999"
    version="1.1"
    id="svg1125"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="UCL-Logo_Footer.svg">
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="ucl-logo-wb-alpha.svg">
   <defs
      id="defs1119" />
   <sodipodi:namedview
@@ -25,17 +25,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.3867248"
-     inkscape:cx="132.80185"
-     inkscape:cy="37.314308"
+     inkscape:zoom="0.13708515"
+     inkscape:cx="-1493.4029"
+     inkscape:cy="-418.79092"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="996"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata1122">
     <rdf:RDF>
@@ -44,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,10 +56,10 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-277)">
+     transform="translate(-16.000003,201.93238)">
     <g
        id="g5712"
-       transform="matrix(1.1190932,0,0,1.1190932,-56.890391,104.80565)"
+       transform="matrix(8.1756652,0,0,8.1756652,-398.49912,-1383.2761)"
        inkscape:export-filename="/home/vitor/Final.png"
        inkscape:export-xdpi="1136.999"
        inkscape:export-ydpi="1136.999"
