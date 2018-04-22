@@ -2,10 +2,12 @@
 
 $primary-color: #e13566;
 $secondary-color: #55a6c9;
+$dark-color: #2a2827;
 
 $theme-colors: (
   "primary": $primary-color,
-  "accent": $secondary-color,
+  "secondary": $secondary-color,
+  "dark": $dark-color,
 );
 
 /* Media queries */
