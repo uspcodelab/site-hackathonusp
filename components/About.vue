@@ -6,7 +6,7 @@
       <p>
         Considerada o
         <a href="https://www.coursera.org/learn/data-manipulation/lecture/tUjcE/a-fourth-paradigm-of-science">4º paradigma da ciência</a>,
-        a ciência de dados está mudando nossa forma de ver o mundo.
+        ela está mudando nossa forma de ver o mundo.
         <br class="d-none d-lg-inline">
         Nesta edição, o HackathonUSP desafia os participantes a pensarem:
         <strong>como a ciência de dados pode melhorar o dia a dia
