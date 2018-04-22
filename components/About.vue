@@ -1,65 +1,66 @@
 <template>
-  <b-row id="about" tag="section" class="dev-journey px-3 py-5 px-sm-5">
-    <b-col sm="12" class="py-5">
-      <h1 class="text-primary text-center pb-3">
-        Sobre o tema
-      </h1>
-      <p class="text-center">
-        Programa de 4 fases que visa introduzir e amadurecer
-        os conhecimentos dos alunos da USP sobre desenvolvimento
-        de software
+  <b-row id="about" tag="section" class="about px-3 px-sm-5 py-5">
+
+    <b-col sm="12" class="text-center py-5">
+      <h1 class="text-primary pb-3">Ciência de Dados</h1>
+      <p>
+        Considerada o
+        <a href="https://www.coursera.org/learn/data-manipulation/lecture/tUjcE/a-fourth-paradigm-of-science">4º paradigma da ciência</a>,
+        a ciência de dados está mudando nossa forma de ver o mundo.
+        <br class="d-none d-lg-inline">
+        Nesta edição, o HackathonUSP desafia os participantes a pensarem:
+        <strong>como a ciência de dados pode melhorar o dia a dia
+        universitário?</strong>
       </p>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <img src="~/assets/containers.png"
-             class="dev-journey__info__icon p-4">
-        <h3 class="dev-journey-phase">dev.start()</h3>
-        Ciclo de oficinas para apresentar programação web
-        para o público geral da universidade, com tópicos
-        como HTML, CSS e JavaScript
+        <img src="@/assets/symbols/databases.svg"
+             class="about__info__icon p-3">
+        <h3 class="about-phase">Cruze dados</h3>
+        Procure diferentes fontes de dados e investigue como elas
+        podem se conectar
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <img src="~/assets/binary.png"
-             class="dev-journey__info__icon p-4">
-        <h3 class="dev-journey-phase">dev.learn()</h3>
-        Grupos de estudo com reuniões semanais, ao longo
-        de um semestre, para aplicar os conhecimentos
-        em projetos propostos pela organização
+        <img src="@/assets/symbols/binaries.svg"
+             class="about__info__icon p-3">
+        <h3 class="about-phase">Encontre padrões</h3>
+        Use métodos manuais e automáticos para revelar padrões
+        que estão ocultos
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <img src="~/assets/bitcoin.png"
-             class="dev-journey__info__icon p-4">
-        <h3 class="dev-journey-phase">dev.boost()</h3>
-        Grupo de estudos avançado, com projetos em times
-        para aprendizado de técnicas de modelagem,
-        implementação e manutenção de sistemas
+        <img src="@/assets/symbols/containers.svg"
+             class="about__info__icon p-3">
+        <h3 class="about-phase">Dinamize aplicações</h3>
+        Faça sistemas que possam reagir a mudanças e aprender
+        com o seu próprio funcionamento
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <img src="~/assets/db.png"
-             class="dev-journey__info__icon p-4">
-        <h3 class="dev-journey-phase">dev.hire()</h3>
-        Iniciativa de captação de currículos de alunos,
-        em particular os participantes do programa,
-        para facilitar o contato profissional
-        com empresas parceiras
+        <img src="@/assets/symbols/graphs.svg"
+             class="about__info__icon p-3">
+        <h3 class="about-phase">Visualize relações</h3>
+        Crie representações intuitivas e facilite o entendimento
+        de fenômenos complexos
       </b-card>
     </b-col>
+
   </b-row>
 </template>
 
 <style lang="scss">
-.dev-journey {
+.about {
+  min-height: calc(100vh - #{$navbar-height});
+
   color: theme-color("dark");
   background-color: theme-color("light");
 
