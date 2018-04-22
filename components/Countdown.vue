@@ -1,107 +1,105 @@
 <template>
-  <b-row class="countdown-container">
-    <b-col sm="12" class="text-center pb-5 text">
-      <h1>Incrições em breve!</h1>
+  <b-row class="countdown">
+    <b-col cols="12" class="countdown__text pt-5 px-3 px-md-5">
+      <h1 class="px-3">Incrições em breve!</h1>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle days text-center">
-      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(days) }}</text>
-      </svg>
-      <p class="text">Dias</p>
+
+    <b-col cols="12" class="countdown__clocks py-5 px-3 px-md-5">
+      <b-row>
+        <b-col cols="6" md="3" class="countdown__clock">
+          <svg width="100%" max-width="10rem" height="10rem">
+            <circle r="4rem" cy="50%" cx="50%"
+                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+            <text class="countdown__clock__number" x="50%" y="50%"
+                  text-anchor="middle" alignment-baseline="central">
+              {{ days }}
+            </text>
+          </svg>
+          <p class="countdown__clock__text">Dias</p>
+        </b-col>
+
+        <b-col cols="6" md="3" class="countdown__clock">
+          <svg width="100%" max-width="10rem" height="10rem">
+            <circle r="4rem" cy="50%" cx="50%"
+                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+            <text class="countdown__clock__number" x="50%" y="50%"
+                  text-anchor="middle" alignment-baseline="central">
+              {{ hours }}
+            </text>
+          </svg>
+          <p class="countdown__clock__text">Horas</p>
+        </b-col>
+
+        <b-col cols="6" md="3" class="countdown__clock">
+          <svg width="100%" max-width="10rem" height="10rem">
+            <circle r="4rem" cy="50%" cx="50%"
+                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+            <text class="countdown__clock__number" x="50%" y="50%"
+                  text-anchor="middle" alignment-baseline="central">
+              {{ minutes }}
+            </text>
+          </svg>
+          <p class="countdown__clock__text">Minutos</p>
+        </b-col>
+
+        <b-col cols="6" md="3" class="countdown__clock">
+          <svg width="100%" max-width="10rem" height="10rem">
+            <circle r="4rem" cy="50%" cx="50%"
+                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+            <text class="countdown__clock__number" x="50%" y="50%"
+                  text-anchor="middle" alignment-baseline="central">
+              {{ seconds }}
+            </text>
+          </svg>
+          <p class="countdown__clock__text">Segundos</p>
+        </b-col>
+      </b-row>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle hours text-center">
-      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(hours) }}</text>
-      </svg>
-      <p class="text">Horas</p>
+
+    <b-col cols="12" class="countdown__arrow pb-5">
+      <span class="h1">
+        <span v-scroll-to="'#header'" class="fa fa-angle-down"/>
+      </span>
     </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle minutes text-center">
-      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(minutes) }}</text>
-      </svg>
-      <p class="text">Minutos</p>
-    </b-col>
-    <b-col sm="12" md="6" lg="3" class="circle seconds text-center">
-      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#00b2ff" fill="none"/>
-        <text x="50%" y="50%" text-anchor="middle" dy="0.4em">{{ Math.trunc(seconds) }}</text>
-      </svg>
-      <p class="text">Segundos</p>
-    </b-col>
-    <b-col sm="12" class="text-center pt-5">
-      <img v-scroll-to="'#header'" src="~/assets/down-arrow.svg" alt="" style="max-height: 5vh; cursor: pointer;">
-    </b-col>
+
   </b-row>
 </template>
-
-<style lang="scss">
-.countdown-container {
-  padding-top: 4rem;
-  min-height: 95vh;
-  align-content: center;
-  align-items: center;
-  background-color: #2a2827;
-
-  &__circle {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__logo {
-    align-self: center;
-  }
-
-  &__arrow {
-    align-items: flex-end;
-  }
-}
-
-.text {
-  color: #e13566;
-  font-size: 2rem;
-}
-
-text {
-  fill: #e13566;
-  font-size: 2.5rem;
-}
-</style>
 
 <script>
 export default {
   props: {
     date: {
-      default: "June 09, 2018",
-      type: String
+      type: String,
+      required: true
     }
   },
+
   data() {
     return {
       now: 0,
       count: 0
     };
   },
+
   computed: {
     seconds() {
-      return (this.modifiedDate - this.now) % 60;
+      return Math.trunc((this.modifiedDate - this.now) % 60);
     },
-
     minutes() {
-      return ((this.modifiedDate - this.now) / 60) % 60;
+      return Math.trunc(((this.modifiedDate - this.now) / 60) % 60);
     },
     hours() {
-      return ((this.modifiedDate - this.now) / 60 / 60) % 24;
+      return Math.trunc(((this.modifiedDate - this.now) / 60 / 60) % 24);
     },
     days() {
-      return (this.modifiedDate - this.now) / 60 / 60 / 24;
+      return Math.trunc((this.modifiedDate - this.now) / 60 / 60 / 24);
     },
+
     modifiedDate: function() {
       return Math.trunc(Date.parse(this.date) / 1000);
     }
   },
+
   mounted() {
     this.timer_loop();
   },
@@ -115,3 +113,33 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.countdown {
+  min-height: calc(100vh - #{$navbar-height});
+
+  align-content: space-between;
+  align-items: center;
+
+  color: theme-color("primary");
+  background-color: theme-color("dark");
+
+  text-align: center;
+
+  &__clock {
+    display: flex;
+    flex-direction: column;
+
+    &__number {
+      fill: theme-color("primary");
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      color: theme-color("primary");
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+}
+</style>
