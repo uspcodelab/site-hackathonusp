@@ -7,9 +7,11 @@
     <b-col cols="12" class="countdown__clocks py-5 px-3 px-md-5">
       <b-row>
         <b-col cols="6" md="3" class="countdown__clock">
-          <svg width="100%" max-width="10rem" height="10rem">
-            <circle r="4rem" cy="50%" cx="50%"
-                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+          <svg width="8rem" height="8rem">
+            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
+                    stroke-width="5" fill="none"/>
+            </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
                   text-anchor="middle" alignment-baseline="central">
               {{ days }}
@@ -19,9 +21,11 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock">
-          <svg width="100%" max-width="10rem" height="10rem">
-            <circle r="4rem" cy="50%" cx="50%"
-                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+          <svg width="8rem" height="8rem">
+            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+              <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
+                    stroke-width="5" fill="none"/>
+            </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
                   text-anchor="middle" alignment-baseline="central">
               {{ hours }}
@@ -31,9 +35,11 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock">
-          <svg width="100%" max-width="10rem" height="10rem">
-            <circle r="4rem" cy="50%" cx="50%"
-                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+          <svg width="8rem" height="8rem">
+            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
+                    stroke-width="5" fill="none"/>
+            </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
                   text-anchor="middle" alignment-baseline="central">
               {{ minutes }}
@@ -43,9 +49,11 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock">
-          <svg width="100%" max-width="10rem" height="10rem">
-            <circle r="4rem" cy="50%" cx="50%"
-                    stroke-width="0.4rem" stroke="#00b2ff" fill="none"/>
+          <svg width="8rem" height="8rem">
+            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
+                    stroke-width="5" fill="none"/>
+            </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
                   text-anchor="middle" alignment-baseline="central">
               {{ seconds }}
@@ -66,6 +74,15 @@
 </template>
 
 <script>
+function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+  const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+
+  return {
+    x: centerX + radius * Math.cos(angleInRadians),
+    y: centerY + radius * Math.sin(angleInRadians)
+  };
+}
+
 export default {
   props: {
     date: {
@@ -109,6 +126,17 @@ export default {
       this.count++;
       this.now = Math.trunc(new Date().getTime() / 1000);
       this.count < 200 && setTimeout(this.timer_loop, 1000);
+    },
+
+    describeArc(centerX, centerY, radius, startAngle, endAngle) {
+      const start = polarToCartesian(centerX, centerY, radius, endAngle);
+      const end = polarToCartesian(centerX, centerY, radius, startAngle);
+
+      const diff = endAngle - startAngle;
+      const largeArcFlag = diff === 0 || diff > 180 ? "1" : "0";
+
+      return `M ${start.x} ${start.y} A ${radius} ${radius}
+          0 ${largeArcFlag} 0 ${end.x} ${end.y}`;
     }
   }
 };
@@ -119,6 +147,7 @@ export default {
   min-height: calc(100vh - #{$navbar-height});
 
   align-content: space-between;
+  justify-content: center;
   align-items: center;
 
   color: theme-color("primary");
@@ -129,16 +158,20 @@ export default {
   &__clock {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    fill: theme-color("primary");
 
     &__number {
-      fill: theme-color("primary");
-      font-size: 2.5rem;
+      font-size: 3rem;
+    }
+
+    &__indicator {
+      stroke: theme-color("secondary");
     }
 
     &__text {
-      color: theme-color("primary");
       font-size: 1.6rem;
-      text-align: center;
     }
   }
 }
