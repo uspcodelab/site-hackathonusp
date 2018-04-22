@@ -1,33 +1,32 @@
 <template>
-  <b-row id="header" tag="section" class="header px-3 py-5 px-sm-5">
-    <b-col sm="6" class="header__text py-5">
+  <b-row id="header" tag="section" class="header px-3 px-sm-5 py-5">
+    <b-col sm="4" lg="6" class="header__logo py-3 py-md-5">
+      <img src="~/assets/hackathon-usp.svg">
+    </b-col>
+    <b-col sm="8" lg="6" class="header__text py-3 py-md-5">
       <h1 class="text-center text-md-left pb-3">
         HackathonUSP 2018
       </h1>
       <p class="lead text-center text-md-left">
-        Aplicando <strong>Ciência de Dados</strong> para melhorar o dia-a-dia universitário
+        Aplicando <strong>ciência de dados</strong> para melhorar
+        <span class="text-md-nowrap">o dia a dia universitário</span>
       </p>
-      <p class="lead text-center text-md-left">
-        <strong>8</strong> e <strong>9</strong> de <strong>junho</strong>
+      <p class="text-center text-md-left">
+        8 e 9 de junho de 2018
       </p>
-      <p class="lead text-center text-md-left">
-        <strong>Instituto de Matemática e Estatística</strong>
+      <p class="text-center text-md-left">
+        Instituto de Matemática e Estatística da USP
       </p>
-    </b-col>
-    <b-col sm="6" class="header__logo pt-5 pb-sm-0">
-      <img src="~/assets/hackathon-usp.svg" class="header__logo__img">
     </b-col>
   </b-row>
 </template>
 
 <style lang="scss">
 .header {
-  min-height: calc(100vh);
-  align-items: center;
-  text-align: center;
+  min-height: calc(100vh - #{$navbar-height});
 
-  background-image: linear-gradient(#ff3c58, #ff2a49);
-  color: white;
+  color: theme-color("light");
+  background-image: linear-gradient(#ff2a49, theme-color("primary"));
 
   h1 {
     font-family: Montserrat, sans;
@@ -38,10 +37,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
-    &__img {
-      max-height: 70vh;
+    img {
+      max-height: 40vh;
     }
   }
 
@@ -79,19 +78,4 @@
     justify-content: center;
   }
 }
-
-@include media-breakpoint-up(lg) {
-  .header__logo__img {
-    width: 70%;
-  }
-}
 </style>
-
-<script>
-import Countdown from "~/components/Countdown.vue";
-export default {
-  components: {
-    Countdown
-  }
-};
-</script>
