@@ -174,6 +174,10 @@ export default {
       font-size: 1.6rem;
     }
   }
+
+  &__arrow {
+    animation: bounce 2s 2; // Bounce twice
+  }
 }
 
 // For some reason, a row inside a row is creating a overflow of 2 pixels
@@ -181,5 +185,21 @@ export default {
 // width no wider than the viewport.
 .fix {
   max-width: 100vw;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2rem);
+  }
+  60% {
+    transform: translateY(-1rem);
+  }
 }
 </style>
