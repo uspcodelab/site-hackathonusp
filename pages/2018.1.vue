@@ -36,10 +36,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-</style>

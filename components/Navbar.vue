@@ -20,11 +20,10 @@
 <style lang="scss">
 .navbar {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  min-height: 4rem;
-  font-size: 1em;
+  min-height: $navbar-height;
 
   &__logo {
-    height: 4rem;
+    height: calc(#{$navbar-height} - 1.5rem);
   }
 }
 </style>

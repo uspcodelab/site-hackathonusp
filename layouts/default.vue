@@ -34,7 +34,6 @@ html {
 }
 
 .page {
-  margin: 0;
-  padding-top: 4rem;
+  padding-top: $navbar-height;
 }
 </style>
