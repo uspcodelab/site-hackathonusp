@@ -13,7 +13,7 @@
                     stroke-width="5" fill="none"/>
             </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" alignment-baseline="central">
+                  text-anchor="middle" dominant-baseline="central">
               {{ days }}
             </text>
           </svg>
@@ -27,7 +27,7 @@
                     stroke-width="5" fill="none"/>
             </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" alignment-baseline="central">
+                  text-anchor="middle" dominant-baseline="central">
               {{ hours }}
             </text>
           </svg>
@@ -41,7 +41,7 @@
                     stroke-width="5" fill="none"/>
             </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" alignment-baseline="central">
+                  text-anchor="middle" dominant-baseline="central">
               {{ minutes }}
             </text>
           </svg>
@@ -55,7 +55,7 @@
                     stroke-width="5" fill="none"/>
             </svg>
             <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" alignment-baseline="central">
+                  text-anchor="middle" dominant-baseline="central">
               {{ seconds }}
             </text>
           </svg>
