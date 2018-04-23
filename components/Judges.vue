@@ -1,10 +1,10 @@
 <template>
-  <b-row tag="section" class="judges px-3 px-sm-5 py-5">
+  <b-row id="judges" tag="section" class="judges px-3 px-sm-5 py-5">
     <b-col sm="12" class="text-center px-lg-5 py-5">
       <h1 class="text-primary pb-3">Jurados</h1>
     </b-col>
     <b-col sm="3" class="text-center">
-      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 40%; height: auto">
+      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 60%; height: auto">
     </b-col>
     <b-col sm="3">
       <p><strong>Denis Mauá</strong></p>
@@ -15,7 +15,7 @@
       </p>
     </b-col>
     <b-col sm="3" class="text-center">
-      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 40%; height: auto">
+      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 60%; height: auto">
     </b-col>
     <b-col sm="3">
       <p><strong>Judge Name</strong></p>
@@ -28,7 +28,7 @@
       </p>
     </b-col>
     <b-col sm="3" class="text-center">
-      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 40%; height: auto">
+      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 60%; height: auto">
     </b-col>
     <b-col sm="3">
       <p><strong>Judge Name</strong></p>
@@ -41,7 +41,7 @@
       </p>
     </b-col>
     <b-col sm="3" class="text-center">
-      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 40%; height: auto">
+      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 60%; height: auto">
     </b-col>
     <b-col sm="3">
       <p><strong>Judge Name</strong></p>
@@ -57,4 +57,8 @@
 </template>
 
 <style lang="scss">
+.judges {
+  min-height: calc(100vh - #{$navbar-height});
+  background-color: theme-color("light");
+}
 </style>
