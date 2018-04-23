@@ -19,7 +19,7 @@
       <b-card body-bg-variant="light" class="text-center">
         <img src="@/assets/symbols/databases.svg"
              class="about__info__icon p-3">
-        <h3 class="about-phase">Relacione dados</h3>
+        <h3 class="about-phase">Correlacione dados</h3>
         Procure diferentes fontes de dados e investigue como elas
         podem se cruzar
       </b-card>
