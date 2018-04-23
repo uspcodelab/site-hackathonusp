@@ -7,8 +7,8 @@
       <main>
         <about/>
         <prizes/>
+        <judges/>
         <sponsors/>
-        <past-events/>
       </main>
       <the-footer/>
     </b-container>
@@ -24,6 +24,8 @@ import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
 import Sponsors from "~/components/Sponsors.vue";
 
+import Judges from "~/components/Judges.vue";
+
 export default {
   components: {
     TheNavbar,
@@ -32,7 +34,8 @@ export default {
     TheFooter,
     About,
     Prizes,
-    Sponsors
+    Sponsors,
+    Judges
   }
 };
 </script>
