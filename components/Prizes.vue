@@ -14,13 +14,9 @@
               text-variant="dark"
               class="text-center"
               title="1˚ Lugar">
-        Intercâmbio para o <strong>Vale do Silício</strong>
-        financiado pela USP
-        <!-- <br><i class="text&#45;secondary fa fa&#45;plus"/><br> -->
-        <!-- Curso de curta duração ministrado -->
-        <!-- na <strong>Universidade de Stanford</strong> -->
+        Viagem para o <strong>Vale do Silício</strong> financiada pela USP
         <br><i class="text-secondary fa fa-plus"/><br>
-        <strong>Troféu</strong> do HackathonUSP
+        <strong>Troféu impresso em 3D</strong> do HackathonUSP
         <br><i class="text-secondary fa fa-plus"/><br>
         <strong>Medalha</strong> do HackathonUSP
       </b-card>
