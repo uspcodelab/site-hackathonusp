@@ -9,16 +9,22 @@
         </b-col>
 
         <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
-          <img src="@/assets/organizers/ucl-logo-rgb-alpha.svg"
-               class="w-100" alt="USPCodeLab">
+          <a href="https://codelab.ime.usp.br/">
+            <img src="@/assets/organizers/ucl-logo-rgb-alpha.svg"
+                 class="w-100" alt="USPCodeLab">
+          </a>
         </b-col>
         <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
-          <img src="@/assets/organizers/hl-logo-rgb-alpha.svg"
-               class="w-100" alt="Hardware Livre USP">
+          <a href="https://hardwarelivreusp.org/">
+            <img src="@/assets/organizers/hl-logo-rgb-alpha.svg"
+                 class="w-100" alt="Hardware Livre USP">
+          </a>
         </b-col>
         <b-col sm="4" class="px-5 px-sm-2 py-3 py-sm-0">
-          <img src="@/assets/organizers/neu-logo-rgb-alpha.png"
-               class="w-100" alt="Nucleo de Empreendedorismo da USP">
+          <a href="http://uspempreende.org/">
+            <img src="@/assets/organizers/neu-logo-rgb-alpha.png"
+                 class="w-100" alt="Nucleo de Empreendedorismo da USP">
+          </a>
         </b-col>
 
       </b-row>
@@ -36,12 +42,16 @@
         </b-col>
 
         <b-col sm="6" class="px-5">
-          <img src="@/assets/sponsors/prp-logo-rgb-alpha.png"
-               class="w-100" alt="PRP-USP">
+          <a href="https://prp.usp.br/">
+            <img src="@/assets/sponsors/prp-logo-rgb-alpha.png"
+                 class="w-100" alt="PRP-USP">
+          </a>
         </b-col>
         <b-col sm="6" class="px-5">
-          <img src="@/assets/sponsors/vtex-logo-rgb-alpha.svg"
-               class="w-100" alt="VTEX">
+          <a href="https://www.vtex.com/">
+            <img src="@/assets/sponsors/vtex-logo-rgb-alpha.svg"
+                 class="w-100" alt="VTEX">
+          </a>
         </b-col>
 
       </b-row>
