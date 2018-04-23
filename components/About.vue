@@ -1,16 +1,17 @@
 <template>
   <b-row id="about" tag="section" class="about px-3 px-sm-5 py-5">
 
-    <b-col sm="12" class="text-center py-5">
+    <b-col sm="12" class="text-center px-lg-5 py-5">
       <h1 class="text-primary pb-3">Ciência de Dados</h1>
       <p>
+        <strong>Como a ciência de dados pode melhorar o dia a dia
+        universitário?</strong>
+      </p>
+      <p class="px-lg-5">
         Considerada o
         <a href="https://www.coursera.org/learn/data-manipulation/lecture/tUjcE/a-fourth-paradigm-of-science">4º paradigma da ciência</a>,
-        ela está mudando nossa forma de ver o mundo.
-        <br class="d-none d-lg-inline">
-        Nesta edição, o HackathonUSP desafia os participantes a pensarem:
-        <strong>como a ciência de dados pode melhorar o dia a dia
-        universitário?</strong>
+        o HackathonUSP desafia os participantes desta edição
+        a criarem soluções usando essa nova forma de ver o mundo
       </p>
     </b-col>
 
@@ -18,9 +19,9 @@
       <b-card body-bg-variant="light" class="text-center">
         <img src="@/assets/symbols/databases.svg"
              class="about__info__icon p-3">
-        <h3 class="about-phase">Cruze dados</h3>
+        <h3 class="about-phase">Relacione dados</h3>
         Procure diferentes fontes de dados e investigue como elas
-        podem se conectar
+        podem se cruzar
       </b-card>
     </b-col>
 
@@ -48,7 +49,7 @@
       <b-card body-bg-variant="light" class="text-center">
         <img src="@/assets/symbols/graphs.svg"
              class="about__info__icon p-3">
-        <h3 class="about-phase">Visualize relações</h3>
+        <h3 class="about-phase">Visualize conexões</h3>
         Crie representações intuitivas e facilite o entendimento
         de fenômenos complexos
       </b-card>
