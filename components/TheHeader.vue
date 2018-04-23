@@ -1,9 +1,9 @@
 <template>
   <b-row id="header" tag="section" class="header px-3 px-sm-5 py-5">
-    <b-col sm="4" lg="6" class="header__logo py-3 py-md-5">
-      <img src="~/assets/hackathon-usp.svg">
+    <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
+      <img src="~/assets/hackathon-usp.svg" class="w-100">
     </b-col>
-    <b-col sm="8" lg="6" class="header__text py-3 py-md-5">
+    <b-col sm="7" lg="6" class="header__text py-3 py-md-5">
       <h1 class="text-center text-md-left pb-3">
         HackathonUSP 2018
       </h1>
@@ -41,6 +41,9 @@
 
     img {
       max-height: 40vh;
+      max-width: 40vh;
+      border-radius: 15%;
+      background-color: theme-color("light");
     }
   }
 
