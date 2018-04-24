@@ -1,7 +1,7 @@
 <template>
   <b-row id="judging-criteria" tag="section" class="judging-criteria px-3 px-sm-5 py-5">
     <b-col sm="12" class="text-center px-lg-5 py-5">
-      <h1 class="pb-3">Critérios de Avaliação</h1>
+      <h1 class="pb-3"><strong>Critérios de Avaliação</strong></h1>
     </b-col>
     <b-col sm="6" md="6" lg="3" class="py-3 p-md-2">
       <h4 class="dev-journey-phase">Criatividade</h4>
