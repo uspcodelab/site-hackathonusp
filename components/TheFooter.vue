@@ -2,11 +2,11 @@
   <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
     <b-col class="footer__social">
       <p class="footer__social__description text-center">
-        Confirme presença no evento!
+        Designed by USPCodeLab
       </p>
-      <a href="https://facebook.com/uspcodelab/" target="_blank">
+      <!-- <a href="https://facebook.com/uspcodelab/" target="_blank">
         <span class="fa fa-facebook mx-2"/>
-      </a>
+      </a> -->
     </b-col>
   </b-row>
 </template>
