@@ -29,7 +29,6 @@
 .judging-criteria {
   background-color: theme-color("secondary");
   color: theme-color("light");
-  min-height: calc(100vh - #{$navbar-height});
 
   .icon {
     max-height: 25%;
