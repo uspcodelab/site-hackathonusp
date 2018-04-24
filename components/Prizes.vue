@@ -4,8 +4,7 @@
     <b-col sm="12" class="text-center py-5">
       <h1 class="pb-3">Prêmios</h1>
       <p class="text-center">
-        Os membros dos times mais bem colocados nos nossos
-        <strong>critérios de julgamento</strong> ganharão
+        Os membros dos times mais bem colocados ganharão
         cada um os seguintes prêmios:
       </p>
     </b-col>
