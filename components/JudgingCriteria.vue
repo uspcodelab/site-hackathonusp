@@ -3,24 +3,24 @@
     <b-col sm="12" class="text-center px-lg-5 py-5">
       <h1 class="pb-3"><strong>Critérios de Avaliação</strong></h1>
     </b-col>
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-2">
-      <h4 class="dev-journey-phase">Criatividade</h4>
-      É uma solução original? Repensa, de forma diferente, algo que já existe?
+    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4 text-center">
+      <h4 class="criteria">Criatividade</h4>
+      <p>É uma solução original? Repensa, de forma diferente, algo que já existe?</p>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-2">
-      <h4 class="dev-journey-phase">Design</h4>
-      A solução possui uma boa interface? Tem uma boa experiência de usuário (UX)?
+    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4 text-center">
+      <h4 class="criteria">Design</h4>
+      <p>A solução possui uma boa interface? Tem uma boa experiência de usuário (UX)?</p>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-2">      
-      <h4 class="dev-journey-phase">Impacto</h4>
-      A ideia é escalável? Pode ser aplicada no mundo real?
+    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4 text-center">      
+      <h4 class="criteria">Impacto</h4>
+      <p>A ideia é escalável? Pode ser aplicada no mundo real?</p>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-2">
-      <h4 class="dev-journey-phase">Funcionamento</h4>
-      A aplicação pode ser usada em pelo menos um exemplo bem definido? Foi apresentado algum caso de uso?
+    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4 text-center">
+      <h4 class="criteria">Funcionamento</h4>
+      <p>A aplicação pode ser usada em pelo menos um exemplo bem definido? Foi apresentado algum caso de uso?</p>
     </b-col>
   </b-row>
 </template>
