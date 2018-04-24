@@ -8,6 +8,7 @@
         <about/>
         <prizes/>
         <judges/>
+        <judging-criteria/>
         <sponsors/>
       </main>
       <the-footer/>
@@ -23,8 +24,8 @@ import TheFooter from "~/components/TheFooter.vue";
 import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
 import Sponsors from "~/components/Sponsors.vue";
-
 import Judges from "~/components/Judges.vue";
+import JudgingCriteria from "~/components/JudgingCriteria.vue";
 
 export default {
   components: {
@@ -35,7 +36,8 @@ export default {
     About,
     Prizes,
     Sponsors,
-    Judges
+    Judges,
+    JudgingCriteria
   }
 };
 </script>

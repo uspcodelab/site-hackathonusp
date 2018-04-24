@@ -11,6 +11,7 @@
         <b-nav-item v-scroll-to="'#about'">Tema</b-nav-item>
         <b-nav-item v-scroll-to="'#prizes'">Prêmios</b-nav-item>
         <b-nav-item v-scroll-to="'#judges'">Jurados</b-nav-item>
+        <b-nav-item v-scroll-to="'#judging-criteria'">Critérios</b-nav-item>
         <b-nav-item v-scroll-to="'#sponsors'">Patrocinadores</b-nav-item>
         <b-nav-item v-scroll-to="'#footer'">Contato</b-nav-item>
       </b-navbar-nav>
