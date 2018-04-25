@@ -46,7 +46,8 @@ module.exports = {
     "bootstrap-vue/nuxt",
     "nuxt-sass-resources-loader",
     "@nuxtjs/font-awesome",
-    "@nuxtjs/redirect-module"
+    "@nuxtjs/redirect-module",
+    "@nuxtjs/pwa"
   ],
 
   redirect: [{ from: "^/$", to: "/2018.1" }],
