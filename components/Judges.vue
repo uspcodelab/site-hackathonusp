@@ -53,6 +53,19 @@
         Sequi.
       </p>
     </b-col>
+    <b-col sm="6" class="text-center py-3 py-md-0">
+      <img src="~/assets/round-placeholder.svg" alt="placeholder" style="width: 30%; height: auto">
+    </b-col>
+    <b-col sm="6" class="py-5 py-md-0">
+      <p><strong>Judge Name</strong></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloribus tempora dignissimos velit repellat eligendi, 
+        sequi exercitationem, cumque, pariatur ducimus labore 
+        debitis at iure facilis quia eum minima illo veritatis. 
+        Sequi.
+      </p>
+    </b-col>
   </b-row>  
 </template>
 
