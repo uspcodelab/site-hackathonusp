@@ -52,6 +52,13 @@ module.exports = {
 
   redirect: [{ from: "^/$", to: "/2018.1" }],
 
+  manifest: {
+    name: "HackathonUSP 2018",
+    lang: "pt-br",
+    start_url: "/2018.1",
+    theme_color: "#e13566"
+  },
+
   /*
   ** Build configuration
   */
