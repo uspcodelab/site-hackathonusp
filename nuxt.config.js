@@ -49,6 +49,9 @@ module.exports = {
     "@nuxtjs/pwa"
   ],
 
+  generate: {
+    fallback: true
+  },
 
   manifest: {
     name: "HackathonUSP 2018",
