@@ -1,22 +1,43 @@
 <template>
   <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
-    <b-navbar-brand v-scroll-to="'#header'">
+    <b-navbar-brand v-scroll-to="target('#header')">
       <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo"
            class="navbar__logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse id="nav_dropdown_collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item v-scroll-to="'#header'">HackathonUSP</b-nav-item>
-        <b-nav-item v-scroll-to="'#about'">Tema</b-nav-item>
-        <b-nav-item v-scroll-to="'#prizes'">Prêmios</b-nav-item>
-        <b-nav-item v-scroll-to="'#judges'">Jurados</b-nav-item>
-        <b-nav-item v-scroll-to="'#judging-criteria'">Critérios</b-nav-item>
-        <b-nav-item v-scroll-to="'#sponsors'">Patrocinadores</b-nav-item>
+        <b-nav-item v-scroll-to="target('#header')">HackathonUSP</b-nav-item>
+        <b-nav-item v-scroll-to="target('#about')">Tema</b-nav-item>
+        <b-nav-item v-scroll-to="target('#prizes')">Prêmios</b-nav-item>
+        <b-nav-item v-scroll-to="target('#judges')">Jurados</b-nav-item>
+        <b-nav-item v-scroll-to="target('#judging-criteria')">Critérios</b-nav-item>
+        <b-nav-item v-scroll-to="target('#sponsors')">Patrocinadores</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
+
+<script>
+export default {
+  computed: {
+    offset() {
+      const rem = parseFloat(
+        window.getComputedStyle(document.documentElement)["font-size"]
+      );
+      return -1 * 5 * rem; // Current size of $navbar-height
+    }
+  },
+  methods: {
+    target(el) {
+      return {
+        el: el,
+        offset: this.offset
+      };
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 .navbar {

@@ -70,7 +70,7 @@
 
     <b-col cols="12" class="countdown__arrow py-3 px-3 px-md-5">
       <span class="h1">
-        <span v-scroll-to="'#header'" class="fa fa-angle-down"/>
+        <span v-scroll-to="target('#header')" class="fa fa-angle-down"/>
       </span>
     </b-col>
 
@@ -116,8 +116,15 @@ export default {
       return Math.trunc((this.modifiedDate - this.now) / 60 / 60 / 24);
     },
 
-    modifiedDate: function() {
+    modifiedDate() {
       return Math.trunc(Date.parse(this.date) / 1000);
+    },
+
+    offset() {
+      const rem = parseFloat(
+        window.getComputedStyle(document.documentElement)["font-size"]
+      );
+      return -1 * 5 * rem; // Current size of $navbar-height
     }
   },
 
@@ -141,6 +148,13 @@ export default {
 
       return `M ${start.x} ${start.y} A ${radius} ${radius}
           0 ${largeArcFlag} 0 ${end.x} ${end.y}`;
+    },
+
+    target(el) {
+      return {
+        el: el,
+        offset: this.offset
+      };
     }
   }
 };
