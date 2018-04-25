@@ -12,7 +12,7 @@
         <span class="text-md-nowrap">o dia a dia universitário</span>
       </p>
       <p class="text-center text-md-left">
-        8 e 9 de junho de 2018
+        9 e 10 de junho de 2018
       </p>
       <p class="text-center text-md-left">
         Instituto de Matemática e Estatística da USP
