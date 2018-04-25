@@ -46,16 +46,13 @@ module.exports = {
     "bootstrap-vue/nuxt",
     "nuxt-sass-resources-loader",
     "@nuxtjs/font-awesome",
-    "@nuxtjs/redirect-module",
     "@nuxtjs/pwa"
   ],
 
-  redirect: [{ from: "^/$", to: "/2018.1" }],
 
   manifest: {
     name: "HackathonUSP 2018",
     lang: "pt-br",
-    start_url: "/2018.1",
     theme_color: "#e13566"
   },
 
