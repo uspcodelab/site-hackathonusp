@@ -53,6 +53,8 @@ module.exports = {
   manifest: {
     name: "HackathonUSP 2018",
     lang: "pt-br",
+    mobileAppIOS: true,
+    ogHost: "https://hackathonusp.netlify.com/"
   },
 
   /*
