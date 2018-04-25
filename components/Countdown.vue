@@ -7,7 +7,7 @@
     <b-col cols="12" class="countdown__clocks py-3 px-3 px-md-5">
       <b-row class="fix">
         <b-col cols="6" md="3" class="countdown__clock py-2">
-          <svg width="8rem" height="8rem">
+          <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
                     stroke-width="5" fill="none"/>
@@ -22,7 +22,7 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock py-2">
-          <svg width="8rem" height="8rem">
+          <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
                     stroke-width="5" fill="none"/>
@@ -37,7 +37,7 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock py-2">
-          <svg width="8rem" height="8rem">
+          <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
                     stroke-width="5" fill="none"/>
@@ -52,7 +52,7 @@
         </b-col>
 
         <b-col cols="6" md="3" class="countdown__clock py-2">
-          <svg width="8rem" height="8rem">
+          <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
                     stroke-width="5" fill="none"/>
@@ -184,7 +184,7 @@ export default {
       font-size: 3rem;
     }
 
-    &__number:active {
+    &__svg:active {
       /* Easter-Egg animations */
       animation-name: circle;
       animation-duration: 1s;
@@ -232,10 +232,10 @@ export default {
 
 @keyframes circle {
   0% {
-    transform: rotateY(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateY(360deg);
+    transform: rotateZ(360deg);
   }
 }
 </style>
