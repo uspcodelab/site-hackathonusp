@@ -26,7 +26,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: "#e13566" },
 
   /*
   ** Global CSS
@@ -53,7 +53,6 @@ module.exports = {
   manifest: {
     name: "HackathonUSP 2018",
     lang: "pt-br",
-    theme_color: "#e13566"
   },
 
   /*
