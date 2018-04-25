@@ -12,8 +12,9 @@
               <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
-            <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" dominant-baseline="central">
+            <text id="days" class="countdown__clock__number"
+                  x="50%" y="50%" text-anchor="middle"
+                  dominant-baseline="central">
               {{ days }}
             </text>
           </svg>
@@ -26,8 +27,9 @@
               <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
-            <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" dominant-baseline="central">
+            <text id="hours" class="countdown__clock__number"
+                  x="50%" y="50%" text-anchor="middle"
+                  dominant-baseline="central">
               {{ hours }}
             </text>
           </svg>
@@ -40,8 +42,9 @@
               <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
-            <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" dominant-baseline="central">
+            <text id="minutes" class="countdown__clock__number"
+                  x="50%" y="50%" text-anchor="middle"
+                  dominant-baseline="central">
               {{ minutes }}
             </text>
           </svg>
@@ -54,8 +57,9 @@
               <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
-            <text class="countdown__clock__number" x="50%" y="50%"
-                  text-anchor="middle" dominant-baseline="central">
+            <text id="seconds" class="countdown__clock__number"
+                  x="50%" y="50%" text-anchor="middle"
+                  dominant-baseline="central">
               {{ seconds }}
             </text>
           </svg>
@@ -166,6 +170,15 @@ export default {
       font-size: 3rem;
     }
 
+    &__number:active {
+      /* Easter-Egg animations */
+      animation-name: circle;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+      transform-origin: 50% 50%;
+    }
+
     &__indicator {
       stroke: theme-color("secondary");
     }
@@ -200,6 +213,15 @@ export default {
   }
   60% {
     transform: translateY(-1rem);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
 </style>
