@@ -16,6 +16,8 @@
               title="1˚ Lugar">
         Viagem para o <strong>Vale do Silício</strong> financiada pela USP
         <br><i class="text-secondary fa fa-plus"/><br>
+        Curso de curta duração na <strong>Universidade de Stanford</strong>
+        <br><i class="text-secondary fa fa-plus"/><br>
         <strong>Troféu impresso em 3D</strong> do HackathonUSP
         <br><i class="text-secondary fa fa-plus"/><br>
         <strong>Medalha</strong> do HackathonUSP
