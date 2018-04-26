@@ -7,6 +7,8 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
+      <img src="@/assets/flaticon/idea-white.svg" alt="placeholder"
+           class="w-25 py-3">
       <h4><strong>Criatividade</strong></h4>
       <p>
         É uma solução original?
@@ -15,6 +17,8 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
+      <img src="@/assets/flaticon/paint-palette-white.svg" alt="placeholder"
+           class="w-25 py-3">
       <h4><strong>Design</strong></h4>
       <p>
         A solução possui uma boa interface?
@@ -23,6 +27,8 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
+      <img src="@/assets/flaticon/exclamation-white.svg" alt="placeholder"
+           class="w-25 py-3">
       <h4><strong>Impacto</strong></h4>
       <p>
         A ideia é escalável?
@@ -31,6 +37,8 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
+      <img src="@/assets/flaticon/gears-white.svg" alt="placeholder"
+           class="w-25 py-3">
       <h4><strong>Funcionamento</strong></h4>
       <p>
         A aplicação pode ser usada num exemplo bem definido?

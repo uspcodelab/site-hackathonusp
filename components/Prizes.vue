@@ -9,40 +9,52 @@
       </p>
     </b-col>
 
+    <!-- First Place Card -->
     <b-col cols="12" class="py-3 p-md-2">
-      <b-card border-variant="light"
-              text-variant="dark"
-              class="text-center"
-              title="1˚ Lugar">
-        Viagem para o <strong>Vale do Silício</strong> financiada pela USP
-        <br><i class="text-secondary fa fa-plus"/><br>
-        Curso de curta duração na <strong>Universidade de Stanford</strong>
-        <br><i class="text-secondary fa fa-plus"/><br>
-        <strong>Troféu impresso em 3D</strong> do HackathonUSP
-        <br><i class="text-secondary fa fa-plus"/><br>
-        <strong>Medalha</strong> do HackathonUSP
+      <b-card no-body border-variant="light" text-variant="dark" class="text-center">
+        <b-col sm="12" class="py-3 p-md-4">
+          <img src="@/assets/flaticon/gold-medal.svg" alt="Gold Medal" class="card-img card-img-top w-25">
+        </b-col>
+        <b-card-body>
+          <h4 class="card-title text-gold">1˚ Lugar</h4>
+          Viagem para o <strong>Vale do Silício</strong> financiada pela USP
+          <br><i class="text-gold fa fa-plus"/><br>
+          Curso de curta duração na <strong>Universidade de Stanford</strong>
+          <br><i class="text-gold fa fa-plus"/><br>
+          <strong>Troféu impresso em 3D</strong> do HackathonUSP
+          <br><i class="text-gold fa fa-plus"/><br>
+          <strong>Medalha</strong> do HackathonUSP
+        </b-card-body>
       </b-card>
     </b-col>
 
+    <!-- Second Place Card -->
     <b-col sm="12" md="12" lg="6" class="py-3 p-md-2">
-      <b-card border-variant="light"
-              text-variant="dark"
-              class="text-center"
-              title="2˚ Lugar">
-        Kindle
-        <br><i class="text-secondary fa fa-plus"/><br>
-        <strong>Medalha</strong> do HackathonUSP
+      <b-card no-body border-variant="light" text-variant="dark" class="text-center">
+        <b-col sm="12" class="py-3 p-md-4">
+          <img src="@/assets/flaticon/silver-medal.svg" alt="Silver Medal" class="card-img card-img-top w-25">
+        </b-col>
+        <b-card-body>
+          <h4 class="card-title text-silver">2˚ Lugar</h4>
+          Kindle
+          <br><i class="text-silver fa fa-plus"/><br>
+          <strong>Medalha</strong> do HackathonUSP
+        </b-card-body>
       </b-card>
     </b-col>
 
+    <!-- Third Place Card -->
     <b-col sm="12" md="12" lg="6" class="py-3 p-md-2">
-      <b-card border-variant="light"
-              class="text-center"
-              text-variant="dark"
-              title="3˚ Lugar">
-        Fone de ouvido
-        <br><i class="text-secondary fa fa-plus"/><br>
-        <strong>Medalha</strong> do HackathonUSP
+      <b-card no-body border-variant="light" text-variant="dark" class="text-center">
+        <b-col sm="12" class="py-3 p-md-4">
+          <img src="@/assets/flaticon/bronze-medal.svg" alt="Bronze Medal" class="card-img card-img-top w-25">
+        </b-col>
+        <b-card-body>
+          <h4 class="card-title text-bronze">3˚ Lugar</h4>
+          Fone de ouvido
+          <br><i class="text-bronze fa fa-plus"/><br>
+          <strong>Medalha</strong> do HackathonUSP
+        </b-card-body>
       </b-card>
     </b-col>
 
@@ -55,5 +67,22 @@
 
   color: theme-color("light");
   background-color: theme-color("secondary");
+}
+
+.card-img {
+  max-height: 30vh;
+  max-width: 30vh;
+}
+
+.text-gold {
+  color: #d9a441 !important;
+}
+
+.text-silver {
+  color: #a8a8a8 !important;
+}
+
+.text-bronze {
+  color: #965a38 !important;
 }
 </style>

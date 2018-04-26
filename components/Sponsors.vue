@@ -1,7 +1,7 @@
 <template>
   <b-row id="sponsors" tag="section" class="text-center px-3 px-sm-5 py-5">
 
-    <b-col sm="12">
+    <b-col sm="12" class="py-5">
       <b-row class="align-items-center">
 
         <b-col sm="12">
@@ -34,7 +34,7 @@
       <hr>
     </b-col>
 
-    <b-col sm="12">
+    <b-col sm="12" class="py-5">
       <b-row class="align-items-center">
 
         <b-col sm="12">
