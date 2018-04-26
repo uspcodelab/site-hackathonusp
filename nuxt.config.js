@@ -46,6 +46,7 @@ module.exports = {
     "bootstrap-vue/nuxt",
     "nuxt-sass-resources-loader",
     "@nuxtjs/font-awesome",
+    "@nuxtjs/onesignal",
     "@nuxtjs/pwa"
   ],
 
@@ -58,6 +59,16 @@ module.exports = {
     lang: "pt-br",
     mobileAppIOS: true,
     ogHost: "https://hackathonusp.netlify.com/"
+  },
+
+  oneSignal: {
+    init: {
+      appId: "8d601dcc-08e4-4b42-bb4e-d6535d218a80",
+      allowLocalHostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: false
+      }
+    }
   },
 
   /*
@@ -88,7 +99,7 @@ module.exports = {
           enforce: "pre",
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
-          exclude: /(node_modules)/
+          exclude: /(node_modules)(static)/
         });
       }
     }
