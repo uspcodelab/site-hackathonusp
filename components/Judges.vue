@@ -35,7 +35,7 @@
     <b-col sm="4" offset-sm="2" class="judges__profile py-3 py-md-0">
       <img src="@/assets/round-placeholder.svg" alt="placeholder"
            class="w-50 py-3">
-      <strong>Isa Kobuto</strong>
+      <strong>Isa Kotsubo</strong>
       <p>
         Em breve...
       </p>
