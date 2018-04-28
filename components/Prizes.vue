@@ -36,7 +36,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-silver">2˚ Lugar</h4>
-          Kindle
+          Amazon <strong>Kindle 8ª Geração</strong>
           <br><i class="text-silver fa fa-plus"/><br>
           <strong>Medalha</strong> do HackathonUSP
         </b-card-body>
@@ -51,7 +51,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-bronze">3˚ Lugar</h4>
-          Fone de ouvido
+          Fone de ouvido <strong>JBL</strong>
           <br><i class="text-bronze fa fa-plus"/><br>
           <strong>Medalha</strong> do HackathonUSP
         </b-card-body>
