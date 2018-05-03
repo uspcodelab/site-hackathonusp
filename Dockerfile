@@ -9,3 +9,9 @@ RUN mkdir -p $INSTALL_PATH
 
 # Set INSTALL_PATH as the main directory
 WORKDIR $INSTALL_PATH
+
+COPY package.json yarn.lock ./
+
+RUN yarn install
+
+CMD yarn run dev
