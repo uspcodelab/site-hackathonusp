@@ -12,7 +12,7 @@
         <b-nav-item v-scroll-to="target('#prizes')">Prêmios</b-nav-item>
         <b-nav-item v-scroll-to="target('#judges')">Jurados</b-nav-item>
         <b-nav-item v-scroll-to="target('#judging-criteria')">Critérios</b-nav-item>
-        <b-nav-item v-scroll-to="target('#sponsors')">Patrocinadores</b-nav-item>
+        <b-nav-item v-scroll-to="target('#promoters')">Realização</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

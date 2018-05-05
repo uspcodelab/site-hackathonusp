@@ -9,7 +9,7 @@
         <prizes/>
         <judges/>
         <judging-criteria/>
-        <sponsors/>
+        <promoters/>
       </main>
       <the-footer/>
     </b-container>
@@ -23,7 +23,7 @@ import TheHeader from "~/components/TheHeader.vue";
 import TheFooter from "~/components/TheFooter.vue";
 import About from "~/components/About.vue";
 import Prizes from "~/components/Prizes.vue";
-import Sponsors from "~/components/Sponsors.vue";
+import Promoters from "~/components/Promoters.vue";
 import Judges from "~/components/Judges.vue";
 import JudgingCriteria from "~/components/JudgingCriteria.vue";
 
@@ -35,7 +35,7 @@ export default {
     TheFooter,
     About,
     Prizes,
-    Sponsors,
+    Promoters,
     Judges,
     JudgingCriteria
   }
