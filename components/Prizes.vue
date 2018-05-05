@@ -17,7 +17,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-gold">1˚ Lugar</h4>
-          Viagem para o <strong>Vale do Silício</strong> financiada pela USP
+          Viagem para o <strong>Vale do Silício</strong> com apoio da Pró-Reitoria de Pesquisa da USP
           <br><i class="text-gold fa fa-plus"/><br>
           Curso de curta duração na <strong>Universidade de Stanford</strong>
           <br><i class="text-gold fa fa-plus"/><br>
