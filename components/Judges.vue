@@ -37,7 +37,7 @@
       <small>
         Professora associada de Ciência da Computação do IME
         da graduação e da pós, pesquisa reconhecimento de padrões
-        e machine learning, com aplicações em análise de imagens.
+        e machine learning, com aplicações em análise de imagens
       </small>
     </b-col>
 
@@ -48,7 +48,7 @@
       <strong>Isa Kotsubo</strong>
       <small>
         Graduanda em Engenharia de Minas na Escola Politécnica da USP, 
-        buscando incentivar inovação e empreendedorismo na universidade
+        busca incentivar inovação e empreendedorismo na universidade
         e membro do Núcleo de Empreendedorismo da USP
       </small>
     </b-col>
