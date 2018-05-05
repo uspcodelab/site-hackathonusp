@@ -24,7 +24,7 @@
       <strong>Paulo Almeida</strong>
       <small>
         Coordenador Administrativo da Pró-Reitoria de Pesquisa,
-        participa da organização do USP talks, do TEDxUSP e 
+        participa da organização do USP talks, do TEDxUSP e
         é o principal contato com o Coursera na USP
       </small>
     </b-col>
@@ -47,9 +47,9 @@
            style="border-radius: 50%;">
       <strong>Isa Kotsubo</strong>
       <small>
-        Graduanda em Engenharia de Minas na Escola Politécnica da USP, 
-        busca incentivar inovação e empreendedorismo na universidade
-        e membro do Núcleo de Empreendedorismo da USP
+        Graduanda em Engenharia de Minas da Poli, é membro titular
+        do Núcleo de Empreendedorismo da USP, onde busca incentivar
+        a inovação e o empreendedorismo na universidade
       </small>
     </b-col>
 
@@ -59,9 +59,9 @@
            style="border-radius: 50%;">
       <strong>Renato Cordeiro</strong>
       <small>
-        Mestrando em Computação estudando Engenharia de Software e 
-        Ciência de Dados, é co-fundador do USPCodeLab e um dos 
-        idealizadores do HackathonUSP
+        Mestrando em Ciência da Computação do IME estudando
+        Engenharia de Software e Ciência de Dados, é co-fundador
+        do USPCodeLab e um dos idealizadores do HackathonUSP
       </small>
     </b-col>
   </b-row>
