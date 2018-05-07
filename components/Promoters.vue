@@ -87,7 +87,7 @@
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-big px-5 px-sm-2 py-3 py-sm-0">
-          <a href="http://uspempeende.org/">
+          <a href="http://uspempreende.org/">
             <img src="@/assets/organizers/neu-logo-rgb-alpha.png"
                  class="d-block mw-100 mh-100" alt="Nucleo de Empreendedorismo da USP">
           </a>
