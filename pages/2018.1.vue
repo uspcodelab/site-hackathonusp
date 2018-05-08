@@ -2,7 +2,7 @@
   <div>
     <the-navbar/>
     <b-container fluid>
-      <countdown date="May, 18, 2018"/>
+      <countdown date="May, 18, 2018 21:00:00"/>
       <the-header/>
       <main>
         <about/>
