@@ -3,7 +3,7 @@
     <the-navbar/>
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subscriptionDay" :before-subs="beforeSubs" />
-      <countdown v-if="!subsGap" :date="eventDay" :before-subs="beforeSubs" />
+      <countdown v-if="!beforeSubs && !subsGap" :date="eventDay" :before-subs="beforeSubs" />
       <the-header :subs-gap="subsGap"/>
       <main>
         <about/>
