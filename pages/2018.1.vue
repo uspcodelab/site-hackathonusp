@@ -42,7 +42,7 @@ export default {
   },
   data() {
     return {
-      subscriptionDay: "May, 16, 2018, 21:00:00",
+      subscriptionDay: "May, 16, 2018, 20:00:00",
       eventDay: "June, 09, 2018, 15:00:00",
       subs: new Date(this.subscriptionDay),
       subsDeadline: new Date("June, 20, 2018, 23:59:59"),
