@@ -17,9 +17,21 @@
       <p class="text-center text-md-left">
         Instituto de Matemática e Estatística da USP
       </p>
+      <button v-if="subsGap" class="btn header__subs">Inscreva-se!</button>
     </b-col>
   </b-row>
 </template>
+
+<script>
+export default {
+  props: {
+    subsGap: {
+      type: Boolean,
+      required: true
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 .header {
