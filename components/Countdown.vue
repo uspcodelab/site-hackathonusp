@@ -97,8 +97,7 @@ export default {
 
   data() {
     return {
-      now: 0,
-      count: 0
+      now: 0
     };
   },
 
@@ -134,9 +133,8 @@ export default {
 
   methods: {
     timer_loop() {
-      this.count++;
       this.now = Math.trunc(new Date().getTime() / 1000);
-      this.count < 200 && setTimeout(this.timer_loop, 1000);
+      setTimeout(this.timer_loop, 1000);
     },
 
     describeArc(centerX, centerY, radius, startAngle, endAngle) {
