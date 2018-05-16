@@ -1,8 +1,7 @@
 <template>
   <b-row class="countdown py-5">
     <b-col cols="12" class="countdown__text py-3 px-3 px-md-5">
-      <h1 v-if="beforeSubs" class="px-3">Inscrições em breve!</h1>
-      <h1 v-else class="px-3">HackathonUSP 2018</h1>
+      <h1 class="px-3">{{ title }}</h1>
     </b-col>
 
     <b-col cols="12" class="countdown__clocks py-3 px-3 px-md-5">
@@ -91,12 +90,13 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 export default {
   props: {
     date: {
-      type: String,
+      type: Date,
       required: true
     },
-    beforeSubs: {
-      type: Boolean,
-      required: true
+    title: {
+      type: String,
+      required: false,
+      default: "Something awesome is coming..."
     }
   },
 
@@ -121,7 +121,7 @@ export default {
     },
 
     modifiedDate() {
-      return Math.trunc(Date.parse(this.date) / 1000);
+      return Math.trunc(this.date / 1000);
     },
 
     offset() {

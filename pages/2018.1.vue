@@ -2,9 +2,9 @@
   <div>
     <the-navbar/>
     <b-container fluid>
-      <countdown v-if="beforeSubs" :date="subscriptionDay" :before-subs="beforeSubs" />
-      <countdown v-if="!beforeSubs && !subsGap" :date="eventDay" :before-subs="beforeSubs" />
-      <the-header :subs-gap="subsGap"/>
+      <countdown v-if="beforeSubs" :date="subsStart" title="Incrições em breve!" />
+      <countdown v-if="afterSubs" :date="eventDay" title="HackathonUSP 2018" />
+      <the-header :subs="subs"/>
       <main>
         <about/>
         <prizes/>
@@ -42,15 +42,24 @@ export default {
   },
   data() {
     return {
-      subscriptionDay: "May, 16, 2018, 19:00:00",
-      eventDay: "June, 09, 2018, 15:00:00",
-      subs: new Date(this.subscriptionDay),
-      subsDeadline: new Date("June, 20, 2018, 23:59:59"),
-      event: new Date(this.eventDay),
-      beforeSubs: true,
-      subsGap: false,
+      beforeSubs: false,
+      afterSubs: false,
       now: ""
     };
+  },
+  computed: {
+    subs() {
+      return !this.beforeSubs && !this.afterSubs;
+    },
+    eventDay() {
+      return new Date("June, 09, 2018, 15:00:00");
+    },
+    subsStart() {
+      return new Date("May, 16, 2018, 19:00:00");
+    },
+    subsEnd() {
+      return new Date("May, 20, 2018, 23:59:59");
+    }
   },
   mounted() {
     this.timer_loop();
@@ -58,14 +67,8 @@ export default {
   methods: {
     timer_loop() {
       this.now = new Date();
-      if (this.now >= this.subs) {
-        this.beforeSubs = false;
-        if (this.now <= this.subsDeadline) {
-          this.subsGap = true;
-        } else {
-          this.subsGap = false;
-        }
-      }
+      this.beforeSubs = this.now < this.subsStart;
+      this.afterSubs = this.now > this.subsEnd;
       setTimeout(this.timer_loop, 1000);
     }
   }

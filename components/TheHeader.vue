@@ -17,7 +17,14 @@
       <p class="text-center text-md-left w-100">
         Instituto de Matemática e Estatística da USP
       </p>
-      <button v-if="subsGap" class="btn header__subs">Inscreva-se!</button>
+      <b-row>
+        <b-col class="sm-12">
+          <button v-if="subs" class="btn header__subs"><a href="http://uclab.xyz/hack-subscribe">Inscreva-se!</a></button>
+        </b-col>
+        <b-col class="sm-12">
+          <button v-if="subs" class="btn header__rules"><a class="header__rules" href="http://uclab.xyz/hack-rules">Regulamento</a></button>
+        </b-col>
+      </b-row>
     </b-col>
   </b-row>
 </template>
@@ -25,7 +32,7 @@
 <script>
 export default {
   props: {
-    subsGap: {
+    subs: {
       type: Boolean,
       required: true
     }
@@ -73,6 +80,16 @@ export default {
     p.lead strong {
       font-weight: bold;
     }
+  }
+
+  &__subs {
+    background-color: #ffffff;
+    color: theme-color("primary");
+  }
+
+  &__rules {
+    color: #ffffff;
+    background-color: theme-color("primary");
   }
 }
 
