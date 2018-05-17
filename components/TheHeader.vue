@@ -19,10 +19,10 @@
       </p>
       <b-row>
         <b-col class="sm-12">
-          <button v-if="subs" class="btn header__subs"><a href="http://uclab.xyz/hack-subscribe">Inscreva-se!</a></button>
+          <a href="http://uclab.xyz/hack-subscribe"><button v-if="subs" class="btn header__subs">Inscreva-se!</button></a>
         </b-col>
         <b-col class="sm-12">
-          <button v-if="subs" class="btn header__rules"><a class="header__rules" href="http://uclab.xyz/hack-rules">Regulamento</a></button>
+          <a class="header__rules" href="http://uclab.xyz/hack-rules"><button v-if="subs" class="btn header__rules">Regulamento</button></a>
         </b-col>
       </b-row>
     </b-col>
