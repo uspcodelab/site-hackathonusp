@@ -11,25 +11,25 @@
         <b-col sm="4" offset-sm="2" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://revelo.com.br/">
             <img src="@/assets/sponsors/logo_revelo_transparente.svg"
-                 class="d-block mw-100 h-100" alt="Revelo">
+                 class="d-block mw-100 mh-100" alt="Revelo">
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-big px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://www.vtex.com/">
             <img src="@/assets/sponsors/vtex-logo-rgb-alpha.svg"
-                 class="d-block mw-100 h-100" alt="VTEX">
+                 class="d-block mw-100 mh-100" alt="VTEX">
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://idwall.co/">
             <img src="@/assets/sponsors/idwall.svg"
-                 class="d-block mw-100 h-100" alt="idwall">
+                 class="d-block mw-100 mh-100" alt="idwall">
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://amaro.com/">
             <img src="@/assets/sponsors/amaro-logo-bw-alpha.svg"
-                 class="d-block mw-100 h-100" alt="Amaro">
+                 class="d-block mw-100 mh-100" alt="Amaro">
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
@@ -41,13 +41,13 @@
         <b-col sm="4" offset-sm="2" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://flowsense.com.br/">
             <img src="@/assets/sponsors/flowsense-logo-rgb-alpha.svg"
-                 class="d-block mw-100 h-100" alt="Flowsense">
+                 class="d-block mw-100 mh-100" alt="Flowsense">
           </a>
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://movile.com/">
             <img src="@/assets/sponsors/movile.svg"
-                 class="d-block mw-100 h-100" alt="Movile">
+                 class="d-block mw-100 mh-100" alt="Movile">
           </a>
         </b-col>
 
