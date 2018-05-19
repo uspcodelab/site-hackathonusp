@@ -7,10 +7,10 @@
         <b-col sm="12">
           <h1 class="text-secondary pb-5">Patrocínio</h1>
         </b-col>
-        
+
         <b-col sm="4" offset-sm="2" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://revelo.com.br/">
-            <img src="@/assets/sponsors/logo_revelo_transparente.svg"
+            <img src="@/assets/sponsors/revelo-logo-rgb-alpha.svg"
                  class="d-block mw-100 mh-100" alt="Revelo">
           </a>
         </b-col>
@@ -22,7 +22,7 @@
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://idwall.co/">
-            <img src="@/assets/sponsors/idwall.svg"
+            <img src="@/assets/sponsors/idwall-logo-rgb-alpha.svg"
                  class="d-block mw-100 mh-100" alt="idwall">
           </a>
         </b-col>
@@ -34,7 +34,7 @@
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://br.udacity.com/">
-            <img src="@/assets/sponsors/udacity.svg"
+            <img src="@/assets/sponsors/udacity-logo-rgb-alpha.svg"
                  class="d-block mw-100 mh-100" alt="Udacity">
           </a>
         </b-col>
@@ -46,7 +46,7 @@
         </b-col>
         <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
           <a class="h-100 mw-100" href="https://movile.com/">
-            <img src="@/assets/sponsors/movile.svg"
+            <img src="@/assets/sponsors/movile-logo-rgb-alpha.svg"
                  class="d-block mw-100 mh-100" alt="Movile">
           </a>
         </b-col>
