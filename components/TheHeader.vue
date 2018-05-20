@@ -1,31 +1,41 @@
 <template>
   <b-row id="header" tag="section" class="header px-3 px-sm-5 py-5">
+
     <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
       <img src="~/assets/hackathon-usp.svg" class="w-100">
     </b-col>
+
     <b-col sm="7" lg="6" class="header__text py-3 py-md-5">
       <h1 class="text-center text-md-left pb-3 w-100">
         HackathonUSP 2018
       </h1>
+
       <p class="lead text-center text-md-left w-100">
         Aplicando <strong>ciência de dados</strong> para melhorar
         <span class="text-md-nowrap">o dia a dia universitário</span>
       </p>
+
       <p class="text-center text-md-left w-100">
         9 e 10 de junho de 2018
       </p>
+
       <p class="text-center text-md-left w-100">
         Instituto de Matemática e Estatística da USP
       </p>
-      <b-row>
-        <b-col class="sm-12">
-          <a href="http://uclab.xyz/hack-subscribe"><button v-if="subs" class="btn header__subs">Inscreva-se!</button></a>
-        </b-col>
-        <b-col class="sm-12">
-          <a class="header__rules" href="http://uclab.xyz/hack-rules"><button v-if="subs" class="btn header__rules">Regulamento</button></a>
-        </b-col>
-      </b-row>
+
+      <div class="d-flex justify-content-center justify-content-md-start
+                  w-100 pt-3">
+        <b-btn v-if="subs" variant="light" class="mr-2"
+               to="http://uclab.xyz/hack-subscribe">
+          Inscreva-se!
+        </b-btn>
+        <b-btn v-if="subs" variant="outline-light" class="ml-2"
+               to="http://uclab.xyz/hack-rules">
+          Regulamento
+        </b-btn>
+      </div>
     </b-col>
+
   </b-row>
 </template>
 
@@ -80,16 +90,6 @@ export default {
     p.lead strong {
       font-weight: bold;
     }
-  }
-
-  &__subs {
-    background-color: #ffffff;
-    color: theme-color("primary");
-  }
-
-  &__rules {
-    color: #ffffff;
-    background-color: theme-color("primary");
   }
 }
 
