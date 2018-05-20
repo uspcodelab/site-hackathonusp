@@ -58,7 +58,7 @@ export default {
       return new Date("May, 16, 2018, 19:00:00");
     },
     subsEnd() {
-      return new Date("May, 20, 2018, 23:59:59");
+      return new Date("May, 20, 2018, 22:00:00");
     }
   },
   mounted() {
