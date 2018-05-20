@@ -18,8 +18,8 @@
     "@nuxtjs/pwa": "^2.0.8",
     "bootstrap-vue": "^2.0.0-rc.2",
     "jquery": "^3.3.1",
-    "koa": "^1.0.0",
-    "nuxt": "^1.0.0",
+    "koa": "^2.5.1",
+    "nuxt": "npm:nuxt-edge",
     "nuxt-sass-resources-loader": "^2.0.0",
     "vue-scrollto": "^2.10.0"
   },
@@ -28,12 +28,12 @@
     "cross-env": "^5.0.1",
     "eslint": "^4.15.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-loader": "^1.7.1",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.7.2",
     "nodemon": "^1.11.0",
     "prettier": "^1.10.2",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^7.0.1"
   }
 }
