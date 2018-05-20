@@ -70,7 +70,9 @@
 
     <b-col cols="12" class="countdown__arrow py-3 px-3 px-md-5">
       <span class="h1">
-        <span v-scroll-to="target('#header')" class="fa fa-angle-down"/>
+        <span v-scroll-to="target('#header')">
+          &#x2c5; <!-- 'MODIFIER LETTER DOWN ARROWHEAD' (U+02C5) -->
+        </span>
       </span>
     </b-col>
 

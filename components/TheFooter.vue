@@ -2,14 +2,17 @@
   <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 text-white">
     <b-col class="footer__social">
       <p class="footer__social__description text-center">
-        Designed with <span class="fa fa-heart" style="color:red;"/>
+        Designed with
+        <span style="color:red;">
+          &#x2764; <!-- 'HEAVY BLACK HEART' (U+2764) -->
+        </span>
         by <a href="https://codelab.ime.usp.br/">USPCodeLab</a>
       </p>
 
       <!-- Credits to FlatIcon author -->
       <div class="flaticon-credits">
         Icons made by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
         from
         <a href="https://www.flaticon.com" title="Flaticon">Flaticon</a>
       </div>

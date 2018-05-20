@@ -18,11 +18,11 @@
         <b-card-body>
           <h4 class="card-title text-gold">1˚ Lugar</h4>
           Viagem para o <strong>Vale do Silício</strong> com apoio da Pró-Reitoria de Pesquisa da USP
-          <br><i class="text-gold fa fa-plus"/><br>
+          <br><strong class="text-gold">+</strong><br>
           Curso de curta duração na <strong>Universidade de Stanford</strong>
-          <br><i class="text-gold fa fa-plus"/><br>
+          <br><strong class="text-gold">+</strong><br>
           <strong>Troféu impresso em 3D</strong> do HackathonUSP
-          <br><i class="text-gold fa fa-plus"/><br>
+          <br><strong class="text-gold">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP
         </b-card-body>
       </b-card>
@@ -37,7 +37,7 @@
         <b-card-body>
           <h4 class="card-title text-silver">2˚ Lugar</h4>
           Amazon <strong>Kindle 8ª Geração</strong>
-          <br><i class="text-silver fa fa-plus"/><br>
+          <br><strong class="text-silver">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP
         </b-card-body>
       </b-card>
@@ -52,7 +52,7 @@
         <b-card-body>
           <h4 class="card-title text-bronze">3˚ Lugar</h4>
           Fone de ouvido <strong>JBL</strong>
-          <br><i class="text-bronze fa fa-plus"/><br>
+          <br><strong class="text-bronze">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP
         </b-card-body>
       </b-card>
@@ -70,19 +70,17 @@
 }
 
 .card-img {
-  max-height: 30vh;
+  max-height: 20vh;
   max-width: 30vh;
 }
 
 .text-gold {
-  color: #d9a441 !important;
+  color: #d9a441;
 }
-
 .text-silver {
-  color: #a8a8a8 !important;
+  color: #a8a8a8;
 }
-
 .text-bronze {
-  color: #965a38 !important;
+  color: #965a38;
 }
 </style>
