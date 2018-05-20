@@ -26,11 +26,11 @@
       <div class="d-flex justify-content-center justify-content-md-start
                   w-100 pt-3">
         <b-btn v-if="subs" variant="light" class="mr-2"
-               to="http://uclab.xyz/hack-subscribe">
+               href="http://uclab.xyz/hack-subscribe">
           Inscreva-se!
         </b-btn>
         <b-btn v-if="subs" variant="outline-light" class="ml-2"
-               to="http://uclab.xyz/hack-rules">
+               href="http://uclab.xyz/hack-rules">
           Regulamento
         </b-btn>
       </div>
