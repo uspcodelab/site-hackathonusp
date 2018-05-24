@@ -17,7 +17,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-gold">1˚ Lugar</h4>
-          Viagem para o <strong>Vale do Silício</strong> com apoio da Pró-Reitoria de Pesquisa da USP
+          Viagem para o <strong>Vale do Silício</strong>
           <br><strong class="text-gold">+</strong><br>
           Curso de curta duração na <strong>Universidade de Stanford</strong>
           <br><strong class="text-gold">+</strong><br>
