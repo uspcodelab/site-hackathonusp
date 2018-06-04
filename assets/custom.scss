@@ -37,14 +37,7 @@ $container-max-widths: (
 );
 
 /* Fonts */
-
-$font-family-base: Montserrat, "IBM Plex Sans Condensed";
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/Montserrat-Regular.otf");
-}
+$font-family-base: Montserrat;
 
 /* Navbar */
 $navbar-height: 5rem;

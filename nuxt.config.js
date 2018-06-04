@@ -17,8 +17,7 @@ module.exports = {
       { rel: "icon", type: "image/x-icon", href: "/icon.png" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Montserrat|IBM+Plex+Sans+Condensed"
+        href: "https://fonts.googleapis.com/css?family=Montserrat"
       }
     ]
   },
