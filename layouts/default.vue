@@ -6,13 +6,7 @@
 
 <style lang="scss">
 html {
-  font-size: 14px;
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
 @include media-breakpoint-up(xl) {
