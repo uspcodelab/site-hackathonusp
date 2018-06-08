@@ -3,7 +3,7 @@
     <the-navbar/>
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" title="Incrições em breve!" />
-      <countdown v-if="afterSubs" :date="eventDay" title="HackathonUSP 2018" />
+      <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018" />
       <the-header :subs="subs"/>
       <main>
         <about/>
@@ -44,6 +44,7 @@ export default {
     return {
       beforeSubs: false,
       afterSubs: false,
+      beforeEvent: true,
       now: ""
     };
   },
@@ -69,6 +70,7 @@ export default {
       this.now = new Date();
       this.beforeSubs = this.now < this.subsStart;
       this.afterSubs = this.now > this.subsEnd;
+      this.beforeEvent = this.now < this.eventDay;
       setTimeout(this.timer_loop, 1000);
     }
   }
