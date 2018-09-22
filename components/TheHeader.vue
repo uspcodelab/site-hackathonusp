@@ -1,36 +1,33 @@
 <template>
   <b-row id="header" tag="section" class="header px-3 px-sm-5 py-5">
 
+    <!-- Hackathon's logo -->
     <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
       <img src="~/assets/hackathon-usp.svg" class="w-100">
     </b-col>
 
     <b-col sm="7" lg="6" class="header__text py-3 py-md-5">
-      <h1 class="text-center text-md-left pb-3 w-100">
-        HackathonUSP 2018
-      </h1>
+      <!-- Header title -->
+      <h1 class="text-center text-md-left pb-3 w-100" v-html="info.title" />
 
-      <p class="lead text-center text-md-left w-100">
-        Aplicando <strong>ciência de dados</strong> para melhorar
-        <span class="text-md-nowrap">o dia a dia universitário</span>
-      </p>
+      <!-- Hackathon's phrase -->
+      <p class="lead text-center text-md-left w-100" v-html="info.phrase"/>
 
-      <p class="text-center text-md-left w-100">
-        9 e 10 de junho de 2018
-      </p>
+      <!-- Date -->
+      <p class="text-center text-md-left w-100" v-html="info.date" />
 
-      <p class="text-center text-md-left w-100">
-        Instituto de Matemática e Estatística da USP
-      </p>
+      <!-- Location -->
+      <p class="text-center text-md-left w-100" v-html="info.location" />
 
+      <!-- Subscriptions and rules -->
       <div class="d-flex justify-content-center justify-content-md-start
                   w-100 pt-3">
-        <b-btn v-if="subs" variant="light" class="mr-2"
-               href="http://uclab.xyz/hack-subscribe">
+        <b-btn v-if="subs" :href="info.subscriptions" 
+               variant="light" class="mr-2">
           Inscreva-se!
         </b-btn>
-        <b-btn v-if="subs" variant="outline-light" class="ml-2"
-               href="http://uclab.xyz/hack-rules">
+        <b-btn v-if="subs" :href="info.rules"
+               variant="outline-light" class="ml-2">
           Regulamento
         </b-btn>
       </div>
@@ -44,6 +41,10 @@ export default {
   props: {
     subs: {
       type: Boolean,
+      required: true
+    },
+    info: {
+      type: Object,
       required: true
     }
   }
