@@ -2,9 +2,9 @@
   <div>
     <the-navbar/>
     <b-container fluid>
-      <countdown v-if="beforeSubs" :date="subsStart" title="Incrições em breve!" />
+      <countdown v-if="beforeSubs" :date="subsStart" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018" />
-      <the-header :subs="subs"/>
+      <the-header :subs="subs" :info="info"/>
       <main>
         <about/>
         <prizes/>
@@ -45,7 +45,16 @@ export default {
       beforeSubs: false,
       afterSubs: false,
       beforeEvent: true,
-      now: ""
+      now: "",
+      info: {
+        title: "HackathonUSP 2018.1",
+        phrase: `Aplicando <strong>ciência de dados</strong> para melhorar
+        <span class="text-md-nowrap">o dia a dia universitário</span>`,
+        date: `9 e 10 de junho de 2018`,
+        location: `Instituto de Matemática e Estatística da USP`,
+        subscriptions: `http://uclab.xyz/hack-subscribe`,
+        rules: `http://uclab.xyz/hack-rules`
+      }
     };
   },
   computed: {
