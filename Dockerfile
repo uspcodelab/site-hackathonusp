@@ -1,5 +1,5 @@
 # Use official Ruby's default image as a base
-FROM node:9.5-alpine
+FROM node:10.6-alpine
 
 # Create an environment variable for our default installation path
 ENV INSTALL_PATH /usr/src/web
