@@ -7,5 +7,8 @@ services:
       - "3000:3000"
     volumes:
       - '.:/usr/src/web'
+      - 'app_dependencies:/usr/src/web/node_modules'
     env_file:
       - '.env'
+volumes:
+    app_dependencies:
