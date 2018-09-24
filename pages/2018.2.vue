@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-navbar/>
+    <the-navbar :logo="info.logo"/>
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018.2" />
@@ -47,6 +47,7 @@ export default {
       beforeEvent: true,
       now: "",
       info: {
+        logo: require("@/assets/hackathon-usp-2018.2.svg"),
         title: "HackathonUSP 2018.2",
         phrase: `A tecnologia a favor da <strong>sustentabilidade financeira<strong> das universidades`,
         date: `9 e 10 de novembro de 2018`,
