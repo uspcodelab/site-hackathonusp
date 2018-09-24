@@ -3,7 +3,7 @@
 
     <!-- Hackathon's logo -->
     <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
-      <img src="~/assets/hackathon-usp.svg" class="w-100">
+      <img :src="info.logo" class="w-100">
     </b-col>
 
     <b-col sm="7" lg="6" class="header__text py-3 py-md-5">

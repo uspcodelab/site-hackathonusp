@@ -47,6 +47,7 @@ export default {
       beforeEvent: true,
       now: "",
       info: {
+        logo: require("@/assets/hackathon-usp.svg"),
         title: "HackathonUSP 2018.1",
         phrase: `Aplicando <strong>ciência de dados</strong> para melhorar
         <span class="text-md-nowrap">o dia a dia universitário</span>`,
