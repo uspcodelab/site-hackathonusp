@@ -1,7 +1,7 @@
 <template>
   <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
     <b-navbar-brand v-scroll-to="target('#header')">
-      <img src="~/assets/hackathon-usp.svg" alt="HackathonUSP Logo"
+      <img :src="logo" alt="HackathonUSP Logo"
            class="navbar__logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
@@ -20,6 +20,12 @@
 
 <script>
 export default {
+  props: {
+    logo: {
+      type: Object,
+      required: true
+    }
+  },
   computed: {
     offset() {
       const rem = parseFloat(
