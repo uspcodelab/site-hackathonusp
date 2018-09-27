@@ -2,15 +2,15 @@
   <div>
     <the-navbar :logo="info.logo"/>
     <b-container fluid>
-      <countdown v-if="beforeSubs" :date="subsStart" title="Inscrições em breve!" />
-      <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018" />
-      <the-header :subs="subs" :info="info"/>
+      <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" title="Inscrições em breve!" />
+      <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
+      <the-header :subs="subs" :info="info" :colors="colors"/>
       <main>
-        <about :info="aboutInfo" />
-        <prizes :info="prizesInfo" />
-        <judges :info="judgesInfo" />
-        <judging-criteria :info="judgingCriteriaInfo" />
-        <promoters :info="promotersInfo" />
+        <about :info="aboutInfo" :colors="colors" />
+        <prizes :info="prizesInfo" :colors="colors" />
+        <judges :info="judgesInfo" :colors="colors" />
+        <judging-criteria :info="judgingCriteriaInfo" :colors="colors" />
+        <promoters :info="promotersInfo" :colors="colors" />
       </main>
       <the-footer/>
     </b-container>
@@ -46,6 +46,11 @@ export default {
       afterSubs: false,
       beforeEvent: true,
       now: "",
+      colors: {
+        primaryColor: "#e13566",
+        secondaryColor: "#20b5de",
+        darkColor: "#2a2827"
+      },
       info: {
         logo: require("@/assets/hackathon-usp-2018.1.svg"),
         title: "HackathonUSP 2018.1",
