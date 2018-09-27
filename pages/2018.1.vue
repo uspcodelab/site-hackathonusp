@@ -6,7 +6,7 @@
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018" />
       <the-header :subs="subs" :info="info"/>
       <main>
-        <about/>
+        <about :info="aboutInfo"/>
         <prizes/>
         <judges/>
         <judging-criteria/>
@@ -55,6 +55,45 @@ export default {
         location: `Instituto de Matemática e Estatística da USP`,
         subscriptions: `http://uclab.xyz/hack-subscribe`,
         rules: `http://uclab.xyz/hack-rules`
+      },
+      aboutInfo: {
+        theme: "Ciência de Dados",
+        question: `<strong>Como a ciência de dados pode melhorar o dia a dia
+        universitário?</strong>`,
+        description: `Considerada o
+        <a href="https://www.coursera.org/learn/data-manipulation/lecture/tUjcE/a-fourth-paradigm-of-science">4º paradigma da ciência</a>,
+        o HackathonUSP desafia os participantes desta edição
+        a criarem soluções usando essa nova forma de ver o mundo`,
+        topics: [
+          {
+            id: 0,
+            imgURL: require("@/assets/symbols/databases.svg"),
+            title: "Correlacione dados",
+            text:
+              "Procure diferentes fontes de dados e investigue como elas podem se cruzar"
+          },
+          {
+            id: 1,
+            imgURL: require("@/assets/symbols/binaries.svg"),
+            title: "Encontre padrões",
+            text:
+              "Use métodos manuais e automáticos para revelar padrões que estão ocultos"
+          },
+          {
+            id: 2,
+            imgURL: require("@/assets/symbols/containers.svg"),
+            title: "Dinamize aplicações",
+            text:
+              "Faça sistemas que possam reagir a mudanças e aprender com o seu próprio funcionamento"
+          },
+          {
+            id: 3,
+            imgURL: require("@/assets/symbols/graphs.svg"),
+            title: "Visualize conexões",
+            text:
+              "Crie representações intuitivas e facilite o entendimento de fenômenos complexos"
+          }
+        ]
       }
     };
   },

@@ -2,59 +2,19 @@
   <b-row id="about" tag="section" class="about px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="text-center px-lg-5 py-5">
-      <h1 class="text-primary pb-3">Ciência de Dados</h1>
-      <p>
-        <strong>Como a ciência de dados pode melhorar o dia a dia
-        universitário?</strong>
-      </p>
-      <p class="px-lg-5">
-        Considerada o
-        <a href="https://www.coursera.org/learn/data-manipulation/lecture/tUjcE/a-fourth-paradigm-of-science">4º paradigma da ciência</a>,
-        o HackathonUSP desafia os participantes desta edição
-        a criarem soluções usando essa nova forma de ver o mundo
-      </p>
+      <h1 class="text-primary pb-3">{{ info.theme }}</h1>
+      <p v-html="info.question"/>
+      <p class="px-lg-5" v-html="info.description" />
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
+    <b-col v-for="topic in info.topics" :key="topic.id" sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
-        <img src="@/assets/symbols/databases.svg"
+        <img :src="topic.imgURL"
              class="about__info__icon p-3">
-        <h3 class="about-phase">Correlacione dados</h3>
-        Procure diferentes fontes de dados e investigue como elas
-        podem se cruzar
+        <h3 class="about-phase">{{ topic.title }}</h3>
+        {{ topic.text }}
       </b-card>
     </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
-      <b-card body-bg-variant="light" class="text-center">
-        <img src="@/assets/symbols/binaries.svg"
-             class="about__info__icon p-3">
-        <h3 class="about-phase">Encontre padrões</h3>
-        Use métodos manuais e automáticos para revelar padrões
-        que estão ocultos
-      </b-card>
-    </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
-      <b-card body-bg-variant="light" class="text-center">
-        <img src="@/assets/symbols/containers.svg"
-             class="about__info__icon p-3">
-        <h3 class="about-phase">Dinamize aplicações</h3>
-        Faça sistemas que possam reagir a mudanças e aprender
-        com o seu próprio funcionamento
-      </b-card>
-    </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="about__info py-3 p-md-2">
-      <b-card body-bg-variant="light" class="text-center">
-        <img src="@/assets/symbols/graphs.svg"
-             class="about__info__icon p-3">
-        <h3 class="about-phase">Visualize conexões</h3>
-        Crie representações intuitivas e facilite o entendimento
-        de fenômenos complexos
-      </b-card>
-    </b-col>
-
   </b-row>
 </template>
 
@@ -74,3 +34,14 @@
   }
 }
 </style>
+
+<script>
+export default {
+  props: {
+    info: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>
