@@ -9,7 +9,7 @@
         <about :info="aboutInfo" />
         <prizes :info="prizesInfo" />
         <judges :info="judgesInfo" />
-        <judging-criteria />
+        <judging-criteria :info="judgingCriteriaInfo" />
         <promoters/>
       </main>
       <the-footer/>
@@ -156,6 +156,38 @@ export default {
             bio: `Mestrando em Ciência da Computação do IME estudando
         Engenharia de Software e Ciência de Dados, é co-fundador
         do USPCodeLab e um dos idealizadores do HackathonUSP`
+          }
+        ]
+      },
+      judgingCriteriaInfo: {
+        criteria: [
+          {
+            id: 1,
+            iconURL: require("@/assets/flaticon/idea-white.svg"),
+            name: "Criatividade",
+            description: `É uma solução original?
+        Repensa, de forma diferente, algo que já existe?`
+          },
+          {
+            id: 2,
+            iconURL: require("@/assets/flaticon/paint-palette-white.svg"),
+            name: "Design",
+            description: `A solução possui uma boa interface?
+        Tem uma boa experiência de usuário (UX)?`
+          },
+          {
+            id: 3,
+            iconURL: require("@/assets/flaticon/exclamation-white.svg"),
+            name: "Impacto",
+            description: `A ideia é escalável?
+        Pode ser aplicada mundo real?`
+          },
+          {
+            id: 4,
+            iconURL: require("@/assets/flaticon/gears-white.svg"),
+            name: "Funcionamento",
+            description: `A aplicação pode ser usada num exemplo bem definido?
+        Foi apresentado algum caso de uso?`
           }
         ]
       }

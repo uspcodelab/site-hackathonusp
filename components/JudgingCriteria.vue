@@ -6,46 +6,15 @@
       <h1 class="pb-3">Critérios de Avaliação</h1>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
-      <img src="@/assets/flaticon/idea-white.svg" alt="placeholder"
+    <b-col v-for="criterion in info.criteria" :key="criterion.id" sm="6" md="6" lg="3" class="py-3 p-md-4">
+      <img :src="criterion.iconURL" alt="placeholder"
            class="w-25 py-3">
-      <h4><strong>Criatividade</strong></h4>
+      <h4><strong>{{ criterion.name }}</strong></h4>
       <p>
-        É uma solução original?
-        Repensa, de forma diferente, algo que já existe?
+        {{ criterion.description }}
       </p>
     </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
-      <img src="@/assets/flaticon/paint-palette-white.svg" alt="placeholder"
-           class="w-25 py-3">
-      <h4><strong>Design</strong></h4>
-      <p>
-        A solução possui uma boa interface?
-        Tem uma boa experiência de usuário (UX)?
-      </p>
-    </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
-      <img src="@/assets/flaticon/exclamation-white.svg" alt="placeholder"
-           class="w-25 py-3">
-      <h4><strong>Impacto</strong></h4>
-      <p>
-        A ideia é escalável?
-        Pode ser aplicada mundo real?
-      </p>
-    </b-col>
-
-    <b-col sm="6" md="6" lg="3" class="py-3 p-md-4">
-      <img src="@/assets/flaticon/gears-white.svg" alt="placeholder"
-           class="w-25 py-3">
-      <h4><strong>Funcionamento</strong></h4>
-      <p>
-        A aplicação pode ser usada num exemplo bem definido?
-        Foi apresentado algum caso de uso?
-      </p>
-    </b-col>
-
+    
   </b-row>
 </template>
 
@@ -55,3 +24,14 @@
   color: theme-color("light");
 }
 </style>
+
+<script>
+export default {
+  props: {
+    info: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>
