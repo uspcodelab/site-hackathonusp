@@ -17,13 +17,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-gold">1˚ Lugar</h4>
-          Viagem para o <strong>Vale do Silício</strong>
-          <br><strong class="text-gold">+</strong><br>
-          Curso de curta duração na <strong>Universidade de Stanford</strong>
-          <br><strong class="text-gold">+</strong><br>
-          <strong>Troféu impresso em 3D</strong> do HackathonUSP
-          <br><strong class="text-gold">+</strong><br>
-          <strong>Medalha</strong> do HackathonUSP
+          <p v-html="info.firstPrize" />
         </b-card-body>
       </b-card>
     </b-col>
@@ -36,9 +30,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-silver">2˚ Lugar</h4>
-          Amazon <strong>Kindle 8ª Geração</strong>
-          <br><strong class="text-silver">+</strong><br>
-          <strong>Medalha</strong> do HackathonUSP
+          <p v-html="info.secondPrize" />
         </b-card-body>
       </b-card>
     </b-col>
@@ -51,9 +43,7 @@
         </b-col>
         <b-card-body>
           <h4 class="card-title text-bronze">3˚ Lugar</h4>
-          Fone de ouvido <strong>JBL</strong>
-          <br><strong class="text-bronze">+</strong><br>
-          <strong>Medalha</strong> do HackathonUSP
+          <p v-html="info.thirdPrize" />
         </b-card-body>
       </b-card>
     </b-col>
@@ -84,3 +74,14 @@
   color: #965a38;
 }
 </style>
+
+<script>
+export default {
+  props: {
+    info: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>

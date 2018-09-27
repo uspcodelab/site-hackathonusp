@@ -7,7 +7,7 @@
       <the-header :subs="subs" :info="info"/>
       <main>
         <about :info="aboutInfo"/>
-        <prizes/>
+        <prizes :info="prizesInfo"/>
         <judges/>
         <judging-criteria/>
         <promoters/>
@@ -94,6 +94,21 @@ export default {
               "Crie representações intuitivas e facilite o entendimento de fenômenos complexos"
           }
         ]
+      },
+      prizesInfo: {
+        firstPrize: `Viagem para o <strong>Vale do Silício</strong>
+          <br><strong class="text-gold">+</strong><br>
+          Curso de curta duração na <strong>Universidade de Stanford</strong>
+          <br><strong class="text-gold">+</strong><br>
+          <strong>Troféu impresso em 3D</strong> do HackathonUSP
+          <br><strong class="text-gold">+</strong><br>
+          <strong>Medalha</strong> do HackathonUSP `,
+        secondPrize: `Amazon <strong>Kindle 8ª Geração</strong>
+          <br><strong class="text-silver">+</strong><br>
+          <strong>Medalha</strong> do HackathonUSP`,
+        thirdPrize: `Fone de ouvido <strong>JBL</strong>
+          <br><strong class="text-bronze">+</strong><br>
+          <strong>Medalha</strong> do HackathonUSP`
       }
     };
   },
