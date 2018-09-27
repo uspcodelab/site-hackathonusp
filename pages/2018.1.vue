@@ -6,10 +6,10 @@
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" title="HackathonUSP 2018" />
       <the-header :subs="subs" :info="info"/>
       <main>
-        <about :info="aboutInfo"/>
-        <prizes :info="prizesInfo"/>
-        <judges/>
-        <judging-criteria/>
+        <about :info="aboutInfo" />
+        <prizes :info="prizesInfo" />
+        <judges :info="judgesInfo" />
+        <judging-criteria />
         <promoters/>
       </main>
       <the-footer/>
@@ -109,6 +109,55 @@ export default {
         thirdPrize: `Fone de ouvido <strong>JBL</strong>
           <br><strong class="text-bronze">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP`
+      },
+      judgesInfo: {
+        judges: [
+          {
+            id: 1,
+            imgURL: require("@/assets/judges/denis_maua.jpg"),
+            imgAlt: "prof. Dênis Maua",
+            name: "Denis Mauá",
+            bio: `Professor Asistente de Ciência da Computação no IME,
+        pesquisa raciocínio probabilistico e suas aplicações
+        em inteligênica artificial e aprendizagem de máquina`
+          },
+          {
+            id: 2,
+            imgURL: require("@/assets/judges/vitor_paulo.jpg"),
+            imgAlt: "Paulo Almeida",
+            name: "Paulo Almeida",
+            bio: `Coordenador Administrativo da Pró-Reitoria de Pesquisa,
+        participa da organização do USP talks, do TEDxUSP e
+        é o principal contato com o Coursera na USP`
+          },
+          {
+            id: 3,
+            imgURL: require("@/assets/judges/nina_hirata.jpg"),
+            imgAlt: "prof. Nina Hirata",
+            name: "Nina Hirata",
+            bio: `Professora associada de Ciência da Computação do IME
+        da graduação e da pós, pesquisa reconhecimento de padrões
+        e machine learning, com aplicações em análise de imagens`
+          },
+          {
+            id: 4,
+            imgURL: require("@/assets/judges/isa_kotsubo.jpg"),
+            imgAlt: "Isa Kotsubo",
+            name: "Isa Kotsubo",
+            bio: `Graduanda em Engenharia de Minas da Poli, é membro titular
+        do Núcleo de Empreendedorismo da USP, onde busca incentivar
+        a inovação e o empreendedorismo na universidade`
+          },
+          {
+            id: 5,
+            imgURL: require("@/assets/judges/renato_cordeiro.jpg"),
+            imgAlt: "Renato Cordeiro",
+            name: "Renato Cordeiro",
+            bio: `Mestrando em Ciência da Computação do IME estudando
+        Engenharia de Software e Ciência de Dados, é co-fundador
+        do USPCodeLab e um dos idealizadores do HackathonUSP`
+          }
+        ]
       }
     };
   },
