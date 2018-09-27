@@ -8,75 +8,33 @@
           <h1 class="text-secondary pb-5">Patrocínio</h1>
         </b-col>
 
-        <b-col sm="4" offset-sm="2" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://revelo.com.br/">
-            <img src="@/assets/sponsors/revelo-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Revelo">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-big px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://www.vtex.com/">
-            <img src="@/assets/sponsors/vtex-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="VTEX">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://idwall.co/">
-            <img src="@/assets/sponsors/idwall-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="idwall">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://amaro.com/">
-            <img src="@/assets/sponsors/amaro-logo-bw-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Amaro">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://br.udacity.com/">
-            <img src="@/assets/sponsors/udacity-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Udacity">
-          </a>
-        </b-col>
-        <b-col sm="4" offset-sm="2" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://flowsense.com.br/">
-            <img src="@/assets/sponsors/flowsense-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Flowsense">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-small px-5 py-3 p-sm-2">
-          <a class="h-100 mw-100" href="https://movile.com/">
-            <img src="@/assets/sponsors/movile-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Movile">
+        <b-col v-for="sponsor in info.sponsors" 
+               :key="sponsor.id" 
+               sm="4" 
+               class="logo logo-small px-5 py-3 p-sm-2">
+          <a :href="sponsor.webURL" class="h-100 mw-100">
+            <img :src="sponsor.imgURL"
+                 :alt="sponsor.name" class="d-block mw-100 mh-100">
           </a>
         </b-col>
 
       </b-row>
     </b-col>
 
-    <b-col sm="12" class="py-5">
+    <b-col v-if="info.supporters" sm="12" class="py-5">
       <b-row class="align-items-center">
 
         <b-col sm="12">
           <h1 class="text-secondary pb-5">Apoio</h1>
         </b-col>
 
-        <b-col sm="5" offset-sm="1" class="logo logo-big px-5 py-3 p-sm-2">
-          <a href="https://prp.usp.br/">
-            <img src="@/assets/supporters/prp-logo-rgb-alpha.png"
-                 class="d-block mw-100 mh-100" alt="PRP-USP">
-          </a>
-        </b-col>
-        <b-col sm="3" class="logo logo-small px-5 py-3 p-sm-2">
-          <a href="https://www.ime.usp.br/">
-            <img src="@/assets/supporters/ime-logo-bw-alpha.png"
-                 class="d-block mw-100 mh-100" alt="IME-USP">
-          </a>
-        </b-col>
-        <b-col sm="3" class="logo logo-small px-5 py-3 p-sm-2">
-          <a href="https://www.ime.usp.br/imejr/">
-            <img src="@/assets/supporters/imejr-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="IME Jr.">
+        <b-col v-for="supporter in info.supporters" 
+               :key="supporter.id" 
+               sm="4" 
+               class="logo logo-small px-5 py-3 p-sm-2">
+          <a :href="supporter.webURL">
+            <img :src="supporter.imgURL"
+                 :alt="supporter.name" class="d-block mw-100 mh-100">
           </a>
         </b-col>
 
@@ -94,22 +52,13 @@
           <h1 class="text-primary pb-5">Organização</h1>
         </b-col>
 
-        <b-col sm="4" class="logo logo-big px-5 px-sm-2 py-3 py-sm-0">
-          <a href="https://codelab.ime.usp.br/">
-            <img src="@/assets/organizers/ucl-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="USPCodeLab">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-big px-5 px-sm-2 py-3 py-sm-0">
-          <a href="https://hardwarelivreusp.org/">
-            <img src="@/assets/organizers/hl-logo-rgb-alpha.svg"
-                 class="d-block mw-100 mh-100" alt="Hardware Livre USP">
-          </a>
-        </b-col>
-        <b-col sm="4" class="logo logo-big px-5 px-sm-2 py-3 py-sm-0">
-          <a href="http://uspempreende.org/">
-            <img src="@/assets/organizers/neu-logo-rgb-alpha.png"
-                 class="d-block mw-100 mh-100" alt="Nucleo de Empreendedorismo da USP">
+        <b-col v-for="organizer in info.organizers" 
+               :key="organizer.id" 
+               sm="4" 
+               class="logo logo-small px-5 px-sm-2 py-3 py-sm-0">
+          <a :href="organizer.webURL">
+            <img :src="organizer.imgURL"
+                 :alt="organizer.name" class="d-block mw-100 mh-100">
           </a>
         </b-col>
 
@@ -132,12 +81,19 @@
 }
 
 @include media-breakpoint-up(md) {
-  .logo-big {
-    height: calc(2 * #{$navbar-height});
-  }
-
   .logo-small {
     height: calc(2 * #{$navbar-height});
   }
 }
 </style>
+
+<script>
+export default {
+  props: {
+    info: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>

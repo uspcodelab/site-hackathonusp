@@ -10,7 +10,7 @@
         <prizes :info="prizesInfo" />
         <judges :info="judgesInfo" />
         <judging-criteria :info="judgingCriteriaInfo" />
-        <promoters/>
+        <promoters :info="promotersInfo" />
       </main>
       <the-footer/>
     </b-container>
@@ -188,6 +188,92 @@ export default {
             name: "Funcionamento",
             description: `A aplicação pode ser usada num exemplo bem definido?
         Foi apresentado algum caso de uso?`
+          }
+        ]
+      },
+      promotersInfo: {
+        sponsors: [
+          {
+            id: 1,
+            webURL: "https://revelo.com.br/",
+            imgURL: require("@/assets/sponsors/revelo-logo-rgb-alpha.svg"),
+            name: "Revelo"
+          },
+          {
+            id: 2,
+            webURL: "https://www.vtex.com/",
+            imgURL: require("@/assets/sponsors/vtex-logo-rgb-alpha.svg"),
+            name: "VTEX"
+          },
+          {
+            id: 3,
+            webURL: "https://idwall.co/",
+            imgURL: require("@/assets/sponsors/idwall-logo-rgb-alpha.svg"),
+            name: "idwall"
+          },
+          {
+            id: 4,
+            webURL: "https://amaro.com/",
+            imgURL: require("@/assets/sponsors/amaro-logo-bw-alpha.svg"),
+            name: "Amaro"
+          },
+          {
+            id: 5,
+            webURL: "https://br.udacity.com/",
+            imgURL: require("@/assets/sponsors/udacity-logo-rgb-alpha.svg"),
+            name: "Udacity"
+          },
+          {
+            id: 6,
+            webURL: "https://flowsense.com.br/",
+            imgURL: require("@/assets/sponsors/flowsense-logo-rgb-alpha.svg"),
+            name: "Flowsense"
+          },
+          {
+            id: 7,
+            webURL: "https://movile.com/",
+            imgURL: require("@/assets/sponsors/movile-logo-rgb-alpha.svg"),
+            name: "Movile"
+          }
+        ],
+        supporters: [
+          {
+            id: 1,
+            webURL: "https://prp.usp.br/",
+            imgURL: require("@/assets/supporters/prp-logo-rgb-alpha.png"),
+            name: "PRP-USP"
+          },
+          {
+            id: 2,
+            webURL: "https://www.ime.usp.br/",
+            imgURL: require("@/assets/supporters/ime-logo-bw-alpha.png"),
+            name: "IME-USP"
+          },
+          {
+            id: 3,
+            webURL: "https://www.ime.usp.br/imejr/",
+            imgURL: require("@/assets/supporters/imejr-logo-rgb-alpha.svg"),
+            name: "IME Jr."
+          }
+        ],
+        organizers: [
+          {
+            id: 1,
+            webURL: "https://codelab.ime.usp.br/",
+            imgURL: require("@/assets/organizers/ucl-logo-rgb-alpha.svg"),
+            name: "USPCodeLab"
+          },
+          {
+            id: 2,
+            webURL: "https://hardwarelivreusp.org/",
+            imgURL: require("@/assets/organizers/hl-logo-rgb-alpha.svg"),
+            name: "Hardware Livre USP"
+          },
+          {
+            id: 3,
+            webURL: "http://uspempreende.org/",
+            imgURL: require("@/assets/organizers/neu-logo-rgb-alpha.png"),
+            name: "Nucleo de Empreendedorismo da USP"
           }
         ]
       }
