@@ -1,14 +1,15 @@
 <template>
-  <b-row class="countdown py-5">
+  <b-row :style="{ color: colors.primaryColor,
+                   backgroundColor: colors.darkColor }" class="countdown py-5">
     <b-col cols="12" class="countdown__text py-3 px-3 px-md-5">
       <h1 class="px-3">{{ title }}</h1>
     </b-col>
 
     <b-col cols="12" class="countdown__clocks py-3 px-3 px-md-5">
       <b-row class="fix">
-        <b-col cols="6" md="3" class="countdown__clock py-2">
+        <b-col :style="{ fill: colors.primaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
-            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+            <svg :style="{ stroke: colors.secondaryColor }" viewBox="0 0 100 100">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
@@ -21,9 +22,9 @@
           <div class="countdown__clock__text">Dias</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock py-2">
+        <b-col :style="{ fill: colors.primaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
-            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+            <svg :style="{ stroke: colors.secondaryColor }" viewBox="0 0 100 100">
               <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
@@ -36,9 +37,9 @@
           <div class="countdown__clock__text">Horas</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock py-2">
+        <b-col :style="{ fill: colors.primaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
-            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+            <svg :style="{ stroke: colors.secondaryColor }" viewBox="0 0 100 100">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
@@ -51,9 +52,9 @@
           <div class="countdown__clock__text">Minutos</div>
         </b-col>
 
-        <b-col cols="6" md="3" class="countdown__clock py-2">
+        <b-col :style="{ fill: colors.primaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
-            <svg viewBox="0 0 100 100" class="countdown__clock__indicator">
+            <svg :style="{ stroke: colors.secondaryColor }" viewBox="0 0 100 100">
               <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
                     stroke-width="5" fill="none"/>
             </svg>
@@ -99,6 +100,10 @@ export default {
       type: String,
       required: false,
       default: "Something awesome is coming..."
+    },
+    colors: {
+      type: Object,
+      required: true
     }
   },
 
@@ -173,17 +178,12 @@ export default {
   justify-content: center;
   align-items: center;
 
-  color: theme-color("primary");
-  background-color: theme-color("dark");
-
   text-align: center;
 
   &__clock {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    fill: theme-color("primary");
 
     &__number {
       font-size: 3rem;
@@ -196,10 +196,6 @@ export default {
       animation-iteration-count: infinite;
 
       transform-origin: 50% 50%;
-    }
-
-    &__indicator {
-      stroke: theme-color("secondary");
     }
 
     &__text {
