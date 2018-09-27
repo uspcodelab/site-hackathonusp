@@ -22,7 +22,7 @@
 export default {
   props: {
     logo: {
-      type: Object,
+      type: String,
       required: true
     }
   },
