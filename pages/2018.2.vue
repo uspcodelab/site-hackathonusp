@@ -50,7 +50,7 @@ export default {
         logo: require("@/assets/hackathon-usp-2018.2.svg"),
         title: "HackathonUSP 2018.2",
         phrase: `A tecnologia a favor da <strong>sustentabilidade financeira<strong> das universidades`,
-        date: `9 e 10 de novembro de 2018`,
+        date: `10 e 11 de novembro de 2018`,
         location: `Instituto de Matemática e Estatística da USP`,
         subscriptions: `http://uclab.xyz/hack-subscribe`,
         rules: `http://uclab.xyz/hack-rules`
@@ -62,7 +62,7 @@ export default {
       return !this.beforeSubs && !this.afterSubs;
     },
     eventDay() {
-      return new Date("November, 09, 2018, 13:00:00");
+      return new Date("November, 10, 2018, 13:00:00");
     },
     subsStart() {
       return new Date("May, 16, 2018, 19:00:00");
