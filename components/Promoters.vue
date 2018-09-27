@@ -9,8 +9,9 @@
         </b-col>
 
         <b-col v-for="sponsor in info.sponsors" 
-               :key="sponsor.id" 
-               sm="4" 
+               :key="sponsor.id"
+               :class="{ 'offset-sm-2' : (sponsor.id === 1 || sponsor.id === 6)}"
+               sm="4"
                class="logo logo-small px-5 py-3 p-sm-2">
           <a :href="sponsor.webURL" class="h-100 mw-100">
             <img :src="sponsor.imgURL"

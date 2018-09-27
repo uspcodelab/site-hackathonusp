@@ -5,7 +5,7 @@
       <h1 class="text-primary pb-3">Jurados</h1>
     </b-col>
 
-    <b-col v-for="judge in info.judges" :key="judge.id" sm="4" class="judges__profile py-3 py-md-0">
+    <b-col v-for="judge in info.judges" :key="judge.id" :class="{ 'offset-sm-2' : (judge.id === 4) }" sm="4" class="judges__profile py-3 py-md-0">
       <img :src="judge.imgURL" :alt="judge.imgAlt"
            class="w-50 py-3"
            style="border-radius: 50%;">
