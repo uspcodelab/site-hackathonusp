@@ -12,7 +12,7 @@
         <judging-criteria :info="judgingCriteriaInfo" :colors="colors" />
         <promoters :info="promotersInfo" :colors="colors" />
       </main>
-      <the-footer/>
+      <the-footer :colors="colors" />
     </b-container>
   </div>
 </template>
@@ -50,7 +50,8 @@ export default {
         primaryColor: "#e13566",
         secondaryColor: "#20b5de",
         darkColor: "#2a2827",
-        lightColor: "#f8f9fa"
+        lightColor: "#f8f9fa",
+        gradientStartColor: "#ff2a49"
       },
       info: {
         logo: require("@/assets/hackathon-usp-2018.1.svg"),
