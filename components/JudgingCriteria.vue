@@ -1,6 +1,8 @@
 <template>
-  <b-row id="judging-criteria" tag="section"
-         class="judging-criteria text-center px-3 px-sm-5 py-5">
+  <b-row id="judging-criteria" 
+         :style="{ backgroundColor: colors.secondaryColor, color: colors.lightColor }"
+         tag="section"
+         class="text-center px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="px-lg-5 py-5">
       <h1 class="pb-3">Critérios de Avaliação</h1>
@@ -18,17 +20,14 @@
   </b-row>
 </template>
 
-<style lang="scss">
-.judging-criteria {
-  background-color: theme-color("secondary");
-  color: theme-color("light");
-}
-</style>
-
 <script>
 export default {
   props: {
     info: {
+      type: Object,
+      required: true
+    },
+    colors: {
       type: Object,
       required: true
     }

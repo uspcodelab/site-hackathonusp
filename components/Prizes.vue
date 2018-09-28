@@ -1,5 +1,5 @@
 <template>
-  <b-row id="prizes" tag="section" class="prizes px-3 px-sm-5 py-5">
+  <b-row id="prizes" :style="{ color: colors.lightColor, backgroundColor: colors.secondaryColor }" tag="section" class="prizes px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="text-center py-5">
       <h1 class="pb-3">Prêmios</h1>
@@ -54,9 +54,6 @@
 <style lang="scss">
 .prizes {
   min-height: calc(100vh - #{$navbar-height});
-
-  color: theme-color("light");
-  background-color: theme-color("secondary");
 }
 
 .card-img {
@@ -79,6 +76,10 @@
 export default {
   props: {
     info: {
+      type: Object,
+      required: true
+    },
+    colors: {
       type: Object,
       required: true
     }

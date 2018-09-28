@@ -1,11 +1,11 @@
 <template>
-  <b-row id="promoters" tag="section" class="text-center px-3 px-sm-5 py-5">
+  <b-row id="promoters" :style="{ backgroundColor: lightColor }" tag="section" class="text-center px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="py-5">
       <b-row class="align-items-center">
 
         <b-col sm="12">
-          <h1 class="text-secondary pb-5">Patrocínio</h1>
+          <h1 :style="{ color: colors.secondaryColor }" class="pb-5">Patrocínio</h1>
         </b-col>
 
         <b-col v-for="sponsor in info.sponsors" 
@@ -26,7 +26,7 @@
       <b-row class="align-items-center">
 
         <b-col sm="12">
-          <h1 class="text-secondary pb-5">Apoio</h1>
+          <h1 :style="{ color: colors.secondaryColor }" class="pb-5">Apoio</h1>
         </b-col>
 
         <b-col v-for="supporter in info.supporters" 
@@ -50,7 +50,7 @@
       <b-row class="align-items-center">
 
         <b-col sm="12">
-          <h1 class="text-primary pb-5">Organização</h1>
+          <h1 :style="{ color: colors.primaryColor }" class="pb-5">Organização</h1>
         </b-col>
 
         <b-col v-for="organizer in info.organizers" 
@@ -72,7 +72,6 @@
 <style lang="scss">
 #promoters {
   min-height: calc(100vh - #{$navbar-height});
-  background-color: theme-color("light");
 }
 
 .logo {
@@ -92,6 +91,10 @@
 export default {
   props: {
     info: {
+      type: Object,
+      required: true
+    },
+    colors: {
       type: Object,
       required: true
     }

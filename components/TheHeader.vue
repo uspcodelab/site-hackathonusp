@@ -1,9 +1,15 @@
 <template>
-  <b-row id="header" tag="section" class="header px-3 px-sm-5 py-5">
+  <b-row id="header" 
+         :style="{ 
+           color: colors.lightColor,
+           backgroundImage: `linear-gradient(${colors.gradientStartColor}, ${colors.primaryColor})` 
+         }"
+         tag="section" 
+         class="header px-3 px-sm-5 py-5">
 
     <!-- Hackathon's logo -->
     <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
-      <img :src="info.logo" class="w-100">
+      <img :src="info.logo" :style="{ backgroundColor: colors.lightColor }" class="w-100">
     </b-col>
 
     <b-col sm="7" lg="6" class="header__text py-3 py-md-5">
@@ -46,6 +52,10 @@ export default {
     info: {
       type: Object,
       required: true
+    },
+    colors: {
+      type: Object,
+      required: true
     }
   }
 };
@@ -54,9 +64,6 @@ export default {
 <style lang="scss">
 .header {
   min-height: calc(100vh - #{$navbar-height});
-
-  color: theme-color("light");
-  background-image: linear-gradient(#ff2a49, theme-color("primary"));
 
   h1 {
     font-family: Montserrat, sans;
@@ -73,7 +80,6 @@ export default {
       max-height: 40vh;
       max-width: 40vh;
       border-radius: 15%;
-      background-color: theme-color("light");
     }
   }
 

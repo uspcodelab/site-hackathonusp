@@ -1,8 +1,8 @@
 <template>
-  <b-row id="about" tag="section" class="about px-3 px-sm-5 py-5">
+  <b-row id="about" :style="{ color: colors.darkColor, backgroundColor: colors.lightColor }" tag="section" class="about px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="text-center px-lg-5 py-5">
-      <h1 class="text-primary pb-3">{{ info.theme }}</h1>
+      <h1 :style="{ color: colors.primaryColor }" class="pb-3">{{ info.theme }}</h1>
       <p v-html="info.question"/>
       <p class="px-lg-5" v-html="info.description" />
     </b-col>
@@ -22,9 +22,6 @@
 .about {
   min-height: calc(100vh - #{$navbar-height});
 
-  color: theme-color("dark");
-  background-color: theme-color("light");
-
   &__info {
     display: inline-flex;
 
@@ -39,6 +36,10 @@
 export default {
   props: {
     info: {
+      type: Object,
+      required: true
+    },
+    colors: {
       type: Object,
       required: true
     }
