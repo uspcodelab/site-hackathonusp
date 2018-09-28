@@ -49,7 +49,8 @@ export default {
       colors: {
         primaryColor: "#e13566",
         secondaryColor: "#20b5de",
-        darkColor: "#2a2827"
+        darkColor: "#2a2827",
+        lightColor: "#f8f9fa"
       },
       info: {
         logo: require("@/assets/hackathon-usp-2018.1.svg"),
