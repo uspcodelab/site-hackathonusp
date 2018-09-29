@@ -1,10 +1,10 @@
 <template>
   <div>
-    <the-navbar :logo="info.logo"/>
+    <the-navbar :logo="headerInfo.logo"/>
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
-      <the-header :subs="subs" :info="info" :colors="colors"/>
+      <the-header :subs="subs" :info="headerInfo" :colors="colors"/>
       <main>
         <about :info="aboutInfo" :colors="colors" />
         <prizes :info="prizesInfo" :colors="colors" />
@@ -53,7 +53,7 @@ export default {
         lightColor: "#f8f9fa",
         gradientStartColor: "#70beb6"
       },
-      info: {
+      headerInfo: {
         logo: require("@/assets/hackathon-usp-2018.2.svg"),
         title: "HackathonUSP 2018.2",
         phrase: `A tecnologia a favor da <strong>sustentabilidade financeira<strong> das universidades`,
@@ -102,9 +102,7 @@ export default {
         ]
       },
       prizesInfo: {
-        firstPrize: `Viagem para o <strong>Vale do Silício</strong>
-          <br><strong class="text-gold">+</strong><br>
-          Curso de curta duração na <strong>Universidade de Stanford</strong>
+        firstPrize: `Apple <strong>iPad Mini</strong>
           <br><strong class="text-gold">+</strong><br>
           <strong>Troféu impresso em 3D</strong> do HackathonUSP
           <br><strong class="text-gold">+</strong><br>
@@ -120,48 +118,38 @@ export default {
         judges: [
           {
             id: 1,
-            imgURL: require("@/assets/judges/denis_maua.jpg"),
-            imgAlt: "prof. Dênis Maua",
-            name: "Denis Mauá",
-            bio: `Professor Asistente de Ciência da Computação no IME,
-        pesquisa raciocínio probabilistico e suas aplicações
-        em inteligênica artificial e aprendizagem de máquina`
+            imgURL: require("@/assets/judges/placeholder.png"),
+            imgAlt: "placeholder",
+            name: "Em breve...",
+            bio: ``
           },
           {
             id: 2,
-            imgURL: require("@/assets/judges/vitor_paulo.jpg"),
-            imgAlt: "Paulo Almeida",
-            name: "Paulo Almeida",
-            bio: `Coordenador Administrativo da Pró-Reitoria de Pesquisa,
-        participa da organização do USP talks, do TEDxUSP e
-        é o principal contato com o Coursera na USP`
+            imgURL: require("@/assets/judges/placeholder.png"),
+            imgAlt: "placeholder",
+            name: "Em breve...",
+            bio: ``
           },
           {
             id: 3,
-            imgURL: require("@/assets/judges/nina_hirata.jpg"),
-            imgAlt: "prof. Nina Hirata",
-            name: "Nina Hirata",
-            bio: `Professora associada de Ciência da Computação do IME
-        da graduação e da pós, pesquisa reconhecimento de padrões
-        e machine learning, com aplicações em análise de imagens`
+            imgURL: require("@/assets/judges/placeholder.png"),
+            imgAlt: "placeholder",
+            name: "Em breve...",
+            bio: ``
           },
           {
             id: 4,
-            imgURL: require("@/assets/judges/isa_kotsubo.jpg"),
-            imgAlt: "Isa Kotsubo",
-            name: "Isa Kotsubo",
-            bio: `Graduanda em Engenharia de Minas da Poli, é membro titular
-        do Núcleo de Empreendedorismo da USP, onde busca incentivar
-        a inovação e o empreendedorismo na universidade`
+            imgURL: require("@/assets/judges/placeholder.png"),
+            imgAlt: "placeholder",
+            name: "Em breve...",
+            bio: ``
           },
           {
             id: 5,
-            imgURL: require("@/assets/judges/renato_cordeiro.jpg"),
-            imgAlt: "Renato Cordeiro",
-            name: "Renato Cordeiro",
-            bio: `Mestrando em Ciência da Computação do IME estudando
-        Engenharia de Software e Ciência de Dados, é co-fundador
-        do USPCodeLab e um dos idealizadores do HackathonUSP`
+            imgURL: require("@/assets/judges/placeholder.png"),
+            imgAlt: "placeholder",
+            name: "Em breve...",
+            bio: ``
           }
         ]
       },
