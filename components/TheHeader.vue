@@ -2,7 +2,8 @@
   <b-row id="header" 
          :style="{ 
            color: colors.lightColor,
-           backgroundImage: `linear-gradient(${colors.gradientStartColor}, ${colors.primaryColor})` 
+           backgroundImage: `linear-gradient(${colors.gradientStartColor}, 
+                                              ${ colors.gradientEndColor ? colors.gradientEndColor : colors.primaryColor})` 
          }"
          tag="section" 
          class="header px-3 px-sm-5 py-5">
