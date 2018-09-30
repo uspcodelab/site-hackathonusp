@@ -16,6 +16,33 @@ export const headerInfo = {
   rules: `http://uclab.xyz/hack-rules`
 };
 
+export const navInfo = [
+  {
+    id: `#header`,
+    text: `HackathonUSP`
+  },
+  {
+    id: `#about`,
+    text: `Tema`
+  },
+  // {
+  //   id: `#prizes`,
+  //   text: `Prêmios`
+  // },
+  // {
+  //   id: `#judges`,
+  //   text: `Jurados`
+  // },
+  {
+    id: `#judging-criteria`,
+    text: `Critérios`
+  },
+  {
+    id: `#promoters`,
+    text: `Realização`
+  }
+];
+
 export const aboutInfo = {
   theme: "Título",
   question: `Pergunta`,
