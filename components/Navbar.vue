@@ -6,13 +6,8 @@
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse id="nav_dropdown_collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item v-scroll-to="target('#header')">HackathonUSP</b-nav-item>
-        <b-nav-item v-scroll-to="target('#about')">Tema</b-nav-item>
-        <b-nav-item v-scroll-to="target('#prizes')">Prêmios</b-nav-item>
-        <b-nav-item v-scroll-to="target('#judges')">Jurados</b-nav-item>
-        <b-nav-item v-scroll-to="target('#judging-criteria')">Critérios</b-nav-item>
-        <b-nav-item v-scroll-to="target('#promoters')">Realização</b-nav-item>
+      <b-navbar-nav v-for="item in info" :key="item.id">
+        <b-nav-item v-scroll-to="target(`${item.id}`)">{{ item.text }}</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -23,6 +18,10 @@ export default {
   props: {
     logo: {
       type: String,
+      required: true
+    },
+    info: {
+      type: Array,
       required: true
     }
   },
