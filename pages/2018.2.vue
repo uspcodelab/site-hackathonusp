@@ -1,14 +1,14 @@
 <template>
   <div>
-    <the-navbar :logo="headerInfo.logo"/>
+    <the-navbar :logo="headerInfo.logo" :info="navInfo" />
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
       <the-header :subs="subs" :info="headerInfo" :colors="colors"/>
       <main>
         <about :info="aboutInfo" :colors="colors" />
-        <prizes :info="prizesInfo" :colors="colors" />
-        <judges :info="judgesInfo" :colors="colors" />
+        <!-- <prizes :info="prizesInfo" :colors="colors" /> -->
+        <!-- <judges :info="judgesInfo" :colors="colors" /> -->
         <judging-criteria :info="judgingCriteriaInfo" :colors="colors" />
         <promoters :info="promotersInfo" :colors="colors" />
       </main>
@@ -30,6 +30,7 @@ import JudgingCriteria from "~/components/JudgingCriteria.vue";
 
 import {
   colors,
+  navInfo,
   headerInfo,
   aboutInfo,
   prizesInfo,
@@ -57,6 +58,7 @@ export default {
       beforeEvent: true,
       now: "",
       colors,
+      navInfo,
       headerInfo,
       aboutInfo,
       prizesInfo,
