@@ -3,7 +3,8 @@ export const colors = {
   secondaryColor: "#70beb6",
   darkColor: "#2a2827",
   lightColor: "#f8f9fa",
-  gradientStartColor: "#70beb6"
+  gradientStartColor: "#4DC0B5",
+  gradientEndColor: "#4DC0B5" // #76e8dc   If not provided, gradient will end at PrimaryColor
 };
 
 export const headerInfo = {
