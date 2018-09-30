@@ -44,44 +44,37 @@ export const navInfo = [
 ];
 
 export const aboutInfo = {
-  theme: "Título",
-  question: `Pergunta`,
-  description: `Descrição do tema`,
+  theme: "Tecnologia Financeira",
+  question: `Como usar a tecnologia em prol da sustentabilidade financeira das universidades?`,
+  description: ` Explorando a área que gerou os primeiros unicórnios brasileiros, o HackathonUSP 
+                 desafia os participantes desta edição a criarem soluções que misturam tecnologia
+                 com o mundo financeiro`,
   topics: [
     {
       id: 0,
-      imgURL: require("@/assets/symbols/money-flower.svg"),
-      title: "Correlacione dados",
+      imgURL: require("@/assets/symbols/data.svg"),
+      title: "Explore tendências",
       text:
-        "Procure diferentes fontes de dados e investigue como elas podem se cruzar"
+        "Use métodos automáticos para mostrar onde recursos são direcionados"
     },
     {
       id: 1,
-      imgURL: require("@/assets/symbols/shield.svg"),
-      title: "Encontre padrões",
-      text:
-        "Use métodos manuais e automáticos para revelar padrões que estão ocultos"
+      imgURL: require("@/assets/symbols/money-flower.svg"),
+      title: "Encontre novas aplicações",
+      text: "Proponha novas fontes de recurso ou explore as não utilizadas"
     },
     {
       id: 2,
       imgURL: require("@/assets/symbols/balance.svg"),
-      title: "Dinamize aplicações",
+      title: "Visualize as opções",
       text:
-        "Faça sistemas que possam reagir a mudanças e aprender com o seu próprio funcionamento"
+        "Identifique oportunidades para melhorar a eficiência do uso de recursos"
     },
     {
       id: 3,
-      imgURL: require("@/assets/symbols/data.svg"),
-      title: "Visualize conexões",
-      text:
-        "Crie representações intuitivas e facilite o entendimento de fenômenos complexos"
-    },
-    {
-      id: 4,
       imgURL: require("@/assets/symbols/money.svg"),
-      title: "Visualize conexões",
-      text:
-        "Crie representações intuitivas e facilite o entendimento de fenômenos complexos"
+      title: "Promova trocas",
+      text: "Promova o reuso frente à aquisição de novos produtos"
     }
   ]
 };
@@ -186,37 +179,37 @@ export const promotersInfo = {
       webURL: "https://www.vtex.com/",
       imgURL: require("@/assets/sponsors/vtex-logo-rgb-alpha.svg"),
       name: "VTEX"
-    },
-    {
-      id: 3,
-      webURL: "https://idwall.co/",
-      imgURL: require("@/assets/sponsors/idwall-logo-rgb-alpha.svg"),
-      name: "idwall"
-    },
-    {
-      id: 4,
-      webURL: "https://amaro.com/",
-      imgURL: require("@/assets/sponsors/amaro-logo-bw-alpha.svg"),
-      name: "Amaro"
-    },
-    {
-      id: 5,
-      webURL: "https://br.udacity.com/",
-      imgURL: require("@/assets/sponsors/udacity-logo-rgb-alpha.svg"),
-      name: "Udacity"
-    },
-    {
-      id: 6,
-      webURL: "https://flowsense.com.br/",
-      imgURL: require("@/assets/sponsors/flowsense-logo-rgb-alpha.svg"),
-      name: "Flowsense"
-    },
-    {
-      id: 7,
-      webURL: "https://movile.com/",
-      imgURL: require("@/assets/sponsors/movile-logo-rgb-alpha.svg"),
-      name: "Movile"
     }
+    // {
+    //   id: 3,
+    //   webURL: "https://idwall.co/",
+    //   imgURL: require("@/assets/sponsors/idwall-logo-rgb-alpha.svg"),
+    //   name: "idwall"
+    // },
+    // {
+    //   id: 4,
+    //   webURL: "https://amaro.com/",
+    //   imgURL: require("@/assets/sponsors/amaro-logo-bw-alpha.svg"),
+    //   name: "Amaro"
+    // },
+    // {
+    //   id: 5,
+    //   webURL: "https://br.udacity.com/",
+    //   imgURL: require("@/assets/sponsors/udacity-logo-rgb-alpha.svg"),
+    //   name: "Udacity"
+    // },
+    // {
+    //   id: 6,
+    //   webURL: "https://flowsense.com.br/",
+    //   imgURL: require("@/assets/sponsors/flowsense-logo-rgb-alpha.svg"),
+    //   name: "Flowsense"
+    // },
+    // {
+    //   id: 7,
+    //   webURL: "https://movile.com/",
+    //   imgURL: require("@/assets/sponsors/movile-logo-rgb-alpha.svg"),
+    //   name: "Movile"
+    // }
   ],
   supporters: [
     {
