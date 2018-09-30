@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-navbar :logo="headerInfo.logo"/>
+    <the-navbar :logo="headerInfo.logo" :info="navInfo"/>
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
@@ -29,6 +29,7 @@ import Judges from "~/components/Judges.vue";
 import JudgingCriteria from "~/components/JudgingCriteria.vue";
 import {
   colors,
+  navInfo,
   headerInfo,
   aboutInfo,
   prizesInfo,
@@ -56,6 +57,7 @@ export default {
       beforeEvent: true,
       now: "",
       colors,
+      navInfo,
       headerInfo,
       aboutInfo,
       prizesInfo,
