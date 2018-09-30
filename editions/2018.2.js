@@ -46,7 +46,7 @@ export const navInfo = [
 
 export const aboutInfo = {
   theme: "Tecnologia Financeira",
-  question: `Como usar a tecnologia em prol da sustentabilidade financeira das universidades?`,
+  question: `Como usar a tecnologia em prol da <strong>sustentabilidade financeira</strong> das universidades?`,
   description: ` Explorando a área que gerou os primeiros unicórnios brasileiros, o HackathonUSP 
                  desafia os participantes desta edição a criarem soluções que misturam tecnologia
                  com o mundo financeiro`,
@@ -60,16 +60,16 @@ export const aboutInfo = {
     },
     {
       id: 1,
-      imgURL: require("@/assets/symbols/money-flower.svg"),
-      title: "Encontre novas aplicações",
-      text: "Proponha novas fontes de recurso ou explore as não utilizadas"
-    },
-    {
-      id: 2,
       imgURL: require("@/assets/symbols/balance.svg"),
       title: "Visualize as opções",
       text:
         "Identifique oportunidades para melhorar a eficiência do uso de recursos"
+    },
+    {
+      id: 2,
+      imgURL: require("@/assets/symbols/money-flower.svg"),
+      title: "Encontre novas aplicações",
+      text: "Proponha novas fontes de recurso ou explore as não utilizadas"
     },
     {
       id: 3,
@@ -171,9 +171,9 @@ export const promotersInfo = {
   sponsors: [
     {
       id: 1,
-      webURL: "https://revelo.com.br/",
-      imgURL: require("@/assets/sponsors/revelo-logo-rgb-alpha.svg"),
-      name: "Revelo"
+      webURL: "https://pagseguro.uol.com.br",
+      imgURL: require("@/assets/sponsors/pagseguro-uol.svg"),
+      name: "PagSeguro"
     },
     {
       id: 2,
