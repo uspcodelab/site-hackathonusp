@@ -1,5 +1,5 @@
 <template>
-  <b-row id="promoters" :style="{ backgroundColor: lightColor }" tag="section" class="text-center px-3 px-sm-5 py-5">
+  <b-row id="promoters" :style="{ backgroundColor: colors.lightColor }" tag="section" class="text-center px-3 px-sm-5 py-5">
 
     <b-col sm="12" class="py-5">
       <b-row class="align-items-center">
