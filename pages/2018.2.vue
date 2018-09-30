@@ -75,7 +75,7 @@ export default {
       return new Date("November, 10, 2018, 15:00:00");
     },
     subsStart() {
-      return new Date("November, 17, 2018, 19:00:00");
+      return new Date("October, 18, 2018, 20:00:00");
     },
     subsEnd() {
       return new Date("November, 21, 2018, 22:00:00");
