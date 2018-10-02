@@ -172,7 +172,7 @@ export const promotersInfo = {
     {
       id: 1,
       webURL: "https://pagseguro.uol.com.br",
-      imgURL: require("@/assets/sponsors/pagseguro-uol.svg"),
+      imgURL: require("@/assets/sponsors/pagseguro-uol.png"),
       name: "PagSeguro"
     },
     {
