@@ -1,7 +1,7 @@
 {
   "name": "HackathonUSP",
   "version": "1.0.0",
-  "description": "HackathonUSP 2018.1",
+  "description": "A maior competição de desenvolvimento da USP",
   "author": "Renato Cordeiro Ferreira",
   "private": true,
   "scripts": {
