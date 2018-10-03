@@ -11,7 +11,7 @@ module.exports = {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: pkg.description }
+      { hid: "description", name: "description", content: "A maior competição de desenvolvimento da USP" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/icon.png" },
@@ -53,10 +53,10 @@ module.exports = {
   },
 
   manifest: {
-    name: "HackathonUSP 2018",
+    name: "HackathonUSP",
     lang: "pt-br",
     mobileAppIOS: true,
-    ogHost: "https://hackathonusp.netlify.com/"
+    ogHost: "https://hackathonusp.netlify.com/2018.2"
   },
 
   oneSignal: {
