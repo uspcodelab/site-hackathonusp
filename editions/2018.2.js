@@ -180,13 +180,13 @@ export const promotersInfo = {
       webURL: "https://www.vtex.com/",
       imgURL: require("@/assets/sponsors/vtex-logo-rgb-alpha.svg"),
       name: "VTEX"
+    },
+    {
+      id: 6,
+      webURL: "https://www.tfgco.com",
+      imgURL: require("@/assets/sponsors/tfg-logo.svg"),
+      name: "TFG"
     }
-    // {
-    //   id: 3,
-    //   webURL: "https://idwall.co/",
-    //   imgURL: require("@/assets/sponsors/idwall-logo-rgb-alpha.svg"),
-    //   name: "idwall"
-    // },
     // {
     //   id: 4,
     //   webURL: "https://amaro.com/",
