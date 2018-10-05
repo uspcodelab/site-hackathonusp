@@ -8,9 +8,8 @@
           <h1 :style="{ color: colors.secondaryColor }" class="pb-5">Patrocínio</h1>
         </b-col>
 
-        <b-col v-for="sponsor in info.sponsors" 
-               :key="sponsor.id"
-               :class="{ 'offset-sm-2' : (sponsor.id === 1 || sponsor.id === 6)}"
+        <b-col v-for="(sponsor, index) in info.sponsors"
+               :key="index"
                sm="4"
                class="logo logo-small px-5 py-3 p-sm-2">
           <a :href="sponsor.webURL" class="h-100 mw-100">
@@ -29,8 +28,8 @@
           <h1 :style="{ color: colors.secondaryColor }" class="pb-5">Apoio</h1>
         </b-col>
 
-        <b-col v-for="supporter in info.supporters" 
-               :key="supporter.id" 
+        <b-col v-for="(supporter, index) in info.supporters" 
+               :key="index" 
                sm="4" 
                class="logo logo-small px-5 py-3 p-sm-2">
           <a :href="supporter.webURL">
@@ -53,8 +52,8 @@
           <h1 :style="{ color: colors.primaryColor }" class="pb-5">Organização</h1>
         </b-col>
 
-        <b-col v-for="organizer in info.organizers" 
-               :key="organizer.id" 
+        <b-col v-for="(organizer, index) in info.organizers" 
+               :key="index" 
                sm="4" 
                class="logo logo-small px-5 px-sm-2 py-3 py-sm-0">
           <a :href="organizer.webURL">
