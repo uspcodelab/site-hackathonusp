@@ -52,27 +52,23 @@ export const aboutInfo = {
                  com o mundo financeiro`,
   topics: [
     {
-      id: 0,
       imgURL: require("@/assets/symbols/data.svg"),
       title: "Explore tendências",
       text:
         "Use métodos automáticos para mostrar onde recursos são direcionados"
     },
     {
-      id: 1,
       imgURL: require("@/assets/symbols/balance.svg"),
       title: "Visualize as opções",
       text:
         "Identifique oportunidades para melhorar a eficiência do uso de recursos"
     },
     {
-      id: 2,
       imgURL: require("@/assets/symbols/money-flower.svg"),
       title: "Encontre novas aplicações",
       text: "Proponha novas fontes de recurso ou explore as não utilizadas"
     },
     {
-      id: 3,
       imgURL: require("@/assets/symbols/money.svg"),
       title: "Estimule as trocas",
       text: "Promova o reuso de recursos em vez da aquisição de novos produtos"
@@ -97,35 +93,30 @@ export const prizesInfo = {
 export const judgesInfo = {
   judges: [
     {
-      id: 1,
       imgURL: require("@/assets/judges/placeholder.png"),
       imgAlt: "placeholder",
       name: "Em breve...",
       bio: ``
     },
     {
-      id: 2,
       imgURL: require("@/assets/judges/placeholder.png"),
       imgAlt: "placeholder",
       name: "Em breve...",
       bio: ``
     },
     {
-      id: 3,
       imgURL: require("@/assets/judges/placeholder.png"),
       imgAlt: "placeholder",
       name: "Em breve...",
       bio: ``
     },
     {
-      id: 4,
       imgURL: require("@/assets/judges/placeholder.png"),
       imgAlt: "placeholder",
       name: "Em breve...",
       bio: ``
     },
     {
-      id: 5,
       imgURL: require("@/assets/judges/placeholder.png"),
       imgAlt: "placeholder",
       name: "Em breve...",
@@ -137,28 +128,24 @@ export const judgesInfo = {
 export const judgingCriteriaInfo = {
   criteria: [
     {
-      id: 1,
       iconURL: require("@/assets/flaticon/idea-white.svg"),
       name: "Criatividade",
       description: `É uma solução original?
         Repensa, de forma diferente, algo que já existe?`
     },
     {
-      id: 2,
       iconURL: require("@/assets/flaticon/paint-palette-white.svg"),
       name: "Design",
       description: `A solução possui uma boa interface?
         Tem uma boa experiência de usuário (UX)?`
     },
     {
-      id: 3,
       iconURL: require("@/assets/flaticon/exclamation-white.svg"),
       name: "Impacto",
       description: `A ideia é escalável?
         Pode ser aplicada mundo real?`
     },
     {
-      id: 4,
       iconURL: require("@/assets/flaticon/gears-white.svg"),
       name: "Funcionamento",
       description: `A aplicação pode ser usada num exemplo bem definido?
@@ -170,43 +157,40 @@ export const judgingCriteriaInfo = {
 export const promotersInfo = {
   sponsors: [
     {
-      id: 1,
       webURL: "https://pagseguro.uol.com.br",
       imgURL: require("@/assets/sponsors/pagseguro-uol.png"),
       name: "PagSeguro"
     },
     {
-      id: 2,
       webURL: "https://www.vtex.com/",
       imgURL: require("@/assets/sponsors/vtex-logo-rgb-alpha.svg"),
       name: "VTEX"
     },
     {
-      id: 6,
       webURL: "https://www.tfgco.com",
       imgURL: require("@/assets/sponsors/tfg-logo.svg"),
       name: "TFG"
     }
     // {
-    //   id: 4,
+    //
     //   webURL: "https://amaro.com/",
     //   imgURL: require("@/assets/sponsors/amaro-logo-bw-alpha.svg"),
     //   name: "Amaro"
     // },
     // {
-    //   id: 5,
+    //
     //   webURL: "https://br.udacity.com/",
     //   imgURL: require("@/assets/sponsors/udacity-logo-rgb-alpha.svg"),
     //   name: "Udacity"
     // },
     // {
-    //   id: 6,
+    //
     //   webURL: "https://flowsense.com.br/",
     //   imgURL: require("@/assets/sponsors/flowsense-logo-rgb-alpha.svg"),
     //   name: "Flowsense"
     // },
     // {
-    //   id: 7,
+    //
     //   webURL: "https://movile.com/",
     //   imgURL: require("@/assets/sponsors/movile-logo-rgb-alpha.svg"),
     //   name: "Movile"
@@ -214,19 +198,16 @@ export const promotersInfo = {
   ],
   supporters: [
     {
-      id: 1,
       webURL: "https://prp.usp.br/",
       imgURL: require("@/assets/supporters/prp-logo-rgb-alpha.png"),
       name: "PRP-USP"
     },
     {
-      id: 2,
       webURL: "https://www.ime.usp.br/",
       imgURL: require("@/assets/supporters/ime-logo-bw-alpha.png"),
       name: "IME-USP"
     },
     {
-      id: 3,
       webURL: "https://www.ime.usp.br/imejr/",
       imgURL: require("@/assets/supporters/imejr-logo-rgb-alpha.svg"),
       name: "IME Jr."
@@ -234,19 +215,16 @@ export const promotersInfo = {
   ],
   organizers: [
     {
-      id: 1,
       webURL: "https://codelab.ime.usp.br/",
       imgURL: require("@/assets/organizers/ucl-logo-rgb-alpha.svg"),
       name: "USPCodeLab"
     },
     {
-      id: 2,
       webURL: "https://hardwarelivreusp.org/",
       imgURL: require("@/assets/organizers/hl-logo-rgb-alpha.svg"),
       name: "Hardware Livre USP"
     },
     {
-      id: 3,
       webURL: "http://uspempreende.org/",
       imgURL: require("@/assets/organizers/neu-logo-rgb-alpha.png"),
       name: "Nucleo de Empreendedorismo da USP"
