@@ -94,16 +94,6 @@ module.exports = {
         "b-carousel-slide": "img-src",
         "b-embed": "src"
       };
-
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)(static)/
-        });
-      }
     }
   },
 
