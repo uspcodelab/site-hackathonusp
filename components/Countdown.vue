@@ -11,12 +11,9 @@
         <b-col :style="{ fill: colors.secondaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg :style="{ stroke: colors.primaryColor }" viewBox="0 0 100 100">
-              <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)"
-                    stroke-width="5" fill="none"/>
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-days), 360)" stroke-width="5" fill="none" />
             </svg>
-            <text id="days" class="countdown__clock__number"
-                  x="50%" y="50%" text-anchor="middle"
-                  dominant-baseline="central">
+            <text id="days" class="countdown__clock__number" x="50%" y="50%" text-anchor="middle" dominant-baseline="central">
               {{ days }}
             </text>
           </svg>
@@ -26,12 +23,9 @@
         <b-col :style="{ fill: colors.secondaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg :style="{ stroke: colors.primaryColor }" viewBox="0 0 100 100">
-              <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)"
-                    stroke-width="5" fill="none"/>
+              <path :d="describeArc(50, 50, 42, (360/24)*(24-hours), 360)" stroke-width="5" fill="none" />
             </svg>
-            <text id="hours" class="countdown__clock__number"
-                  x="50%" y="50%" text-anchor="middle"
-                  dominant-baseline="central">
+            <text id="hours" class="countdown__clock__number" x="50%" y="50%" text-anchor="middle" dominant-baseline="central">
               {{ hours }}
             </text>
           </svg>
@@ -41,12 +35,9 @@
         <b-col :style="{ fill: colors.secondaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg :style="{ stroke: colors.primaryColor }" viewBox="0 0 100 100">
-              <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)"
-                    stroke-width="5" fill="none"/>
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-minutes), 360)" stroke-width="5" fill="none" />
             </svg>
-            <text id="minutes" class="countdown__clock__number"
-                  x="50%" y="50%" text-anchor="middle"
-                  dominant-baseline="central">
+            <text id="minutes" class="countdown__clock__number" x="50%" y="50%" text-anchor="middle" dominant-baseline="central">
               {{ minutes }}
             </text>
           </svg>
@@ -56,12 +47,9 @@
         <b-col :style="{ fill: colors.secondaryColor }" cols="6" md="3" class="countdown__clock py-2">
           <svg width="8rem" height="8rem" class="countdown__clock__svg">
             <svg :style="{ stroke: colors.primaryColor }" viewBox="0 0 100 100">
-              <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)"
-                    stroke-width="5" fill="none"/>
+              <path :d="describeArc(50, 50, 42, (360/60)*(60-seconds), 360)" stroke-width="5" fill="none" />
             </svg>
-            <text id="seconds" class="countdown__clock__number"
-                  x="50%" y="50%" text-anchor="middle"
-                  dominant-baseline="central">
+            <text id="seconds" class="countdown__clock__number" x="50%" y="50%" text-anchor="middle" dominant-baseline="central">
               {{ seconds }}
             </text>
           </svg>
@@ -73,7 +61,8 @@
     <b-col cols="12" class="countdown__arrow py-3 px-3 px-md-5">
       <span class="h1">
         <span v-scroll-to="target('#header')">
-          &#x2c5; <!-- 'MODIFIER LETTER DOWN ARROWHEAD' (U+02C5) -->
+          &#x2c5;
+          <!-- 'MODIFIER LETTER DOWN ARROWHEAD' (U+02C5) -->
         </span>
       </span>
     </b-col>
@@ -83,7 +72,7 @@
 
 <script>
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-  const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
 
   return {
     x: centerX + radius * Math.cos(angleInRadians),

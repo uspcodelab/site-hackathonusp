@@ -4,7 +4,8 @@
       <p class="footer__social__description text-center">
         Designed with
         <span style="color:red;">
-          &#x2764; <!-- 'HEAVY BLACK HEART' (U+2764) -->
+          &#x2764;
+          <!-- 'HEAVY BLACK HEART' (U+2764) -->
         </span>
         by <a :style="{ color: colors.primaryColor }" href="https://codelab.ime.usp.br/">USPCodeLab</a>
       </p>

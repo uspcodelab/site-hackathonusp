@@ -1,12 +1,9 @@
 <template>
-  <b-row id="header" 
-         :style="{ 
-           color: colors.lightColor,
-           backgroundImage: `linear-gradient(${colors.gradientStartColor}, 
+  <b-row id="header" :style="{ 
+    color: colors.lightColor,
+    backgroundImage: `linear-gradient(${colors.gradientStartColor}, 
                                               ${ colors.gradientEndColor ? colors.gradientEndColor : colors.primaryColor})` 
-         }"
-         tag="section" 
-         class="header px-3 px-sm-5 py-5">
+  }" tag="section" class="header px-3 px-sm-5 py-5">
 
     <!-- Hackathon's logo -->
     <b-col sm="5" lg="6" class="header__logo py-3 py-md-5">
@@ -18,7 +15,7 @@
       <h1 class="text-center text-md-left pb-3 w-100" v-html="info.title" />
 
       <!-- Hackathon's phrase -->
-      <p class="lead text-center text-md-left w-100" v-html="info.phrase"/>
+      <p class="lead text-center text-md-left w-100" v-html="info.phrase" />
 
       <!-- Date -->
       <p class="text-center text-md-left w-100" v-html="info.date" />
@@ -29,12 +26,10 @@
       <!-- Subscriptions and rules -->
       <div class="d-flex justify-content-center justify-content-md-start
                   w-100 pt-3">
-        <b-btn v-if="subs" :href="info.subscriptions" 
-               variant="light" class="mr-2">
+        <b-btn v-if="subs" :href="info.subscriptions" variant="light" class="mr-2">
           Inscreva-se!
         </b-btn>
-        <b-btn v-if="subs" :href="info.rules"
-               variant="outline-light" class="ml-2">
+        <b-btn v-if="subs" :href="info.rules" variant="outline-light" class="ml-2">
           Regulamento
         </b-btn>
       </div>

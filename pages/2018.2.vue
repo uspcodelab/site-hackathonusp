@@ -4,7 +4,7 @@
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" :disclaimer="disclaimer" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
-      <the-header :subs="subs" :info="headerInfo" :colors="colors"/>
+      <the-header :subs="subs" :info="headerInfo" :colors="colors" />
       <main>
         <about :info="aboutInfo" :colors="colors" />
         <!-- <prizes :info="prizesInfo" :colors="colors" /> -->
