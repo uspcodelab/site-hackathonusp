@@ -3,6 +3,7 @@
                    backgroundColor: colors.darkColor }" class="countdown py-5">
     <b-col cols="12" class="countdown__text py-3 px-3 px-md-5">
       <h1 class="px-3">{{ title }}</h1>
+      <small>{{ disclaimer }}</small>
     </b-col>
 
     <b-col cols="12" class="countdown__clocks py-3 px-3 px-md-5">
@@ -100,6 +101,11 @@ export default {
       type: String,
       required: false,
       default: "Something awesome is coming..."
+    },
+    disclaimer: {
+      type: String,
+      required: false,
+      default: ""
     },
     colors: {
       type: Object,

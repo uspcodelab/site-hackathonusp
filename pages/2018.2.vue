@@ -2,7 +2,7 @@
   <div>
     <the-navbar :logo="headerInfo.logo" :info="navInfo" />
     <b-container fluid>
-      <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" title="Inscrições em breve!" />
+      <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" :disclaimer="disclaimer" title="Inscrições em breve!" />
       <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
       <the-header :subs="subs" :info="headerInfo" :colors="colors"/>
       <main>
@@ -57,6 +57,8 @@ export default {
       afterSubs: false,
       beforeEvent: true,
       now: "",
+      disclaimer:
+        "As inscrições são concorridas! Instale o aplicativo e ative as notificações para não perder!",
       colors,
       navInfo,
       headerInfo,
