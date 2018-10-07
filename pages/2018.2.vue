@@ -57,8 +57,7 @@ export default {
       afterSubs: false,
       beforeEvent: true,
       now: "",
-      disclaimer:
-        "As inscrições são concorridas! Instale o aplicativo e ative as notificações para não perder!",
+      disclaimer: `As inscrições são concorridas! <strong>Instale o aplicativo</strong> e <strong>ative as notificações</strong> para não perder!`,
       colors,
       navInfo,
       headerInfo,
