@@ -162,6 +162,11 @@ export const promotersInfo = {
       name: "PagSeguro"
     },
     {
+      webURL: "https://banco.bradesco/",
+      imgURL: require("@/assets/sponsors/bradesco.svg"),
+      name: "Bradesco"
+    },
+    {
       webURL: "https://www.vtex.com/",
       imgURL: require("@/assets/sponsors/vtex-logo-rgb-alpha.svg"),
       name: "VTEX"
