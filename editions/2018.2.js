@@ -220,6 +220,11 @@ export const promotersInfo = {
       webURL: "https://www.ime.usp.br/imejr/",
       imgURL: require("@/assets/supporters/imejr-logo-rgb-alpha.svg"),
       name: "IME Jr."
+    },
+    {
+      webURL: "",
+      imgURL: require("@/assets/supporters/logo-codelab.png"),
+      name: "USPCodeLab São Carlos"
     }
   ],
   organizers: [
