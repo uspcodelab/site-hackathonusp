@@ -170,13 +170,17 @@ export const promotersInfo = {
       webURL: "https://www.tfgco.com",
       imgURL: require("@/assets/sponsors/tfg-logo.svg"),
       name: "TFG"
+    },
+    {
+      webURL: "https://www.taqtile.com.br",
+      imgURL: require("@/assets/sponsors/taqtile.png"),
+      name: "Taqtile"
+    },
+    {
+      webURL: "https://www.udemy.com.br",
+      imgURL: require("@/assets/sponsors/udemy-logo.svg"),
+      name: "Udemy"
     }
-    // {
-    //
-    //   webURL: "https://amaro.com/",
-    //   imgURL: require("@/assets/sponsors/amaro-logo-bw-alpha.svg"),
-    //   name: "Amaro"
-    // },
     // {
     //
     //   webURL: "https://br.udacity.com/",
