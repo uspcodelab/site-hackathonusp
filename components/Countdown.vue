@@ -181,7 +181,9 @@ export default {
     align-items: center;
 
     &__number {
+      cursor: default;
       font-size: 3rem;
+      user-select: none;
     }
 
     &__svg:active {
@@ -194,12 +196,15 @@ export default {
     }
 
     &__text {
+      cursor: default;
       font-size: 1.6rem;
+      user-select: none;
     }
   }
 
   &__arrow {
     animation: bounce 2s 2; // Bounce twice
+    cursor: pointer;
   }
 }
 
