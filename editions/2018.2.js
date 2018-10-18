@@ -71,7 +71,7 @@ export const aboutInfo = {
     {
       imgURL: require("@/assets/symbols/money.svg"),
       title: "Estimule as trocas",
-      text: "Promova o reuso de recursos em vez da aquisição de novos produtos"
+      text: "Promova o reúso de recursos em vez da aquisição de novos produtos"
     }
   ]
 };
