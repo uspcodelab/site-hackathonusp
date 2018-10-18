@@ -60,7 +60,7 @@ module.exports = {
     name: "HackathonUSP",
     lang: "pt-br",
     mobileAppIOS: true,
-    ogHost: "https://hackathonusp.netlify.com/2018.2"
+    ogHost: "https://hackathon.ime.usp.br"
   },
 
   oneSignal: {
