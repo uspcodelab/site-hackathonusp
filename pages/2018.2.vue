@@ -79,7 +79,7 @@ export default {
       return new Date("October, 18, 2018, 20:00:00");
     },
     subsEnd() {
-      return new Date("November, 21, 2018, 22:00:00");
+      return new Date("November, 24, 2018, 23:00:00");
     }
   },
   mounted() {
