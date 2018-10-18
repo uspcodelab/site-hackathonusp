@@ -26,10 +26,10 @@ export const navInfo = [
     id: `#about`,
     text: `Tema`
   },
-  // {
-  //   id: `#prizes`,
-  //   text: `Prêmios`
-  // },
+  {
+    id: `#prizes`,
+    text: `Prêmios`
+  },
   // {
   //   id: `#judges`,
   //   text: `Jurados`
@@ -77,16 +77,20 @@ export const aboutInfo = {
 };
 
 export const prizesInfo = {
-  firstPrize: `Apple <strong>iPad Mini</strong>
+  firstPrize: `Samsung <strong>Smartwatch</strong>
           <br><strong class="text-gold">+</strong><br>
           <strong>Troféu impresso em 3D</strong> do HackathonUSP
           <br><strong class="text-gold">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP `,
-  secondPrize: `Amazon <strong>Kindle 8ª Geração</strong>
+  secondPrize: `Google <strong>Home Mini</strong>
+          <br><strong class="text-silver">+</strong><br>
+          Google <strong>Chromecast</strong>
           <br><strong class="text-silver">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP`,
-  thirdPrize: `Fone de ouvido <strong>JBL</strong>
+  thirdPrize: `JBL <strong>Go 2</strong>
           <br><strong class="text-bronze">+</strong><br>
+          Cupom de crédito na <strong>Udemy</strong>
+          <br><strong class="text-silver">+</strong><br>
           <strong>Medalha</strong> do HackathonUSP`
 };
 

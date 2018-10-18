@@ -7,7 +7,7 @@
       <the-header :subs="subs" :info="headerInfo" :colors="colors" />
       <main>
         <about :info="aboutInfo" :colors="colors" />
-        <!-- <prizes :info="prizesInfo" :colors="colors" /> -->
+        <prizes :info="prizesInfo" :colors="colors" />
         <!-- <judges :info="judgesInfo" :colors="colors" /> -->
         <judging-criteria :info="judgingCriteriaInfo" :colors="colors" />
         <promoters :info="promotersInfo" :colors="colors" />
