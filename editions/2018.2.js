@@ -30,10 +30,10 @@ export const navInfo = [
     id: `#prizes`,
     text: `Prêmios`
   },
-  // {
-  //   id: `#judges`,
-  //   text: `Jurados`
-  // },
+  {
+    id: `#judges`,
+    text: `Jurados`
+  },
   {
     id: `#judging-criteria`,
     text: `Critérios`
@@ -113,19 +113,19 @@ export const judgesInfo = {
       imgAlt: "placeholder",
       name: "Em breve...",
       bio: ``
-    },
-    {
-      imgURL: require("@/assets/judges/placeholder.png"),
-      imgAlt: "placeholder",
-      name: "Em breve...",
-      bio: ``
-    },
-    {
-      imgURL: require("@/assets/judges/placeholder.png"),
-      imgAlt: "placeholder",
-      name: "Em breve...",
-      bio: ``
     }
+    // {
+    //   imgURL: require("@/assets/judges/placeholder.png"),
+    //   imgAlt: "placeholder",
+    //   name: "Em breve...",
+    //   bio: ``
+    // },
+    // {
+    //   imgURL: require("@/assets/judges/placeholder.png"),
+    //   imgAlt: "placeholder",
+    //   name: "Em breve...",
+    //   bio: ``
+    // }
   ]
 };
 

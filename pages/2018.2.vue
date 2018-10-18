@@ -8,7 +8,7 @@
       <main>
         <about :info="aboutInfo" :colors="colors" />
         <prizes :info="prizesInfo" :colors="colors" />
-        <!-- <judges :info="judgesInfo" :colors="colors" /> -->
+        <judges :info="judgesInfo" :colors="colors" />
         <judging-criteria :info="judgingCriteriaInfo" :colors="colors" />
         <promoters :info="promotersInfo" :colors="colors" />
       </main>
