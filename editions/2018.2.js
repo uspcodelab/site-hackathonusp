@@ -187,7 +187,7 @@ export const promotersInfo = {
     },
     {
       webURL: "https://www.udemy.com.br",
-      imgURL: require("@/assets/sponsors/udemy-logo.svg"),
+      imgURL: require("@/assets/sponsors/udemy_logo_vertical_TM_RGB.png"),
       name: "Udemy"
     }
     // {
