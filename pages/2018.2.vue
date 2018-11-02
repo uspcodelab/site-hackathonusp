@@ -3,8 +3,9 @@
     <the-navbar :logo="headerInfo.logo" :info="navInfo" />
     <b-container fluid>
       <countdown v-if="beforeSubs" :date="subsStart" :colors="colors" :disclaimer="disclaimer" title="Inscrições em breve!" />
-      <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018" />
-      <the-header :subs="subs" :info="headerInfo" :colors="colors" />
+      <countdown v-if="afterSubs && beforeEvent" :date="eventDay" :colors="colors" title="HackathonUSP 2018.2" />
+      <countdown v-if="duringEvent" :date="eventEnd" :colors="colors" title="Happy Hacking!" />
+      <the-header :subs="subs" :submission="duringEvent" :info="headerInfo" :colors="colors" />
       <main>
         <about :info="aboutInfo" :colors="colors" />
         <prizes :info="prizesInfo" :colors="colors" />
@@ -56,6 +57,7 @@ export default {
       beforeSubs: false,
       afterSubs: false,
       beforeEvent: true,
+      duringEvent: false,
       now: "",
       disclaimer: `As inscrições são concorridas! <strong>Instale o aplicativo</strong> e <strong>ative as notificações</strong> para não perder!`,
       colors,
@@ -75,6 +77,12 @@ export default {
     eventDay() {
       return new Date("November, 10, 2018, 15:00:00");
     },
+    eventStart() {
+      return new Date("November, 10, 2018, 16:10:00");
+    },
+    eventEnd() {
+      return new Date("November, 11, 2018, 12:00:00");
+    },
     subsStart() {
       return new Date("October, 18, 2018, 20:00:00");
     },
@@ -91,6 +99,7 @@ export default {
       this.beforeSubs = this.now < this.subsStart;
       this.afterSubs = this.now > this.subsEnd;
       this.beforeEvent = this.now < this.eventDay;
+      this.duringEvent = this.now < this.eventEnd && this.now > this.eventStart;
       setTimeout(this.timer_loop, 1000);
     }
   }
