@@ -32,6 +32,9 @@
         <b-btn v-if="subs" :href="info.rules" variant="outline-light" class="ml-2">
           Regulamento
         </b-btn>
+        <b-btn v-if="submission" :href="info.submit" variant="outline-light" class="ml-2">
+          Submeter projeto!
+        </b-btn>
       </div>
     </b-col>
 
@@ -44,6 +47,11 @@ export default {
     subs: {
       type: Boolean,
       required: true
+    },
+    submission: {
+      type: Boolean,
+      required: false,
+      default: false
     },
     info: {
       type: Object,
