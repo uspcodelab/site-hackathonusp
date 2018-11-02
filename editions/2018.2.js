@@ -14,7 +14,8 @@ export const headerInfo = {
   date: `10 e 11 de novembro de 2018`,
   location: `Instituto de Matemática e Estatística da USP`,
   subscriptions: `http://uclab.xyz/hack-subscribe`,
-  rules: `http://uclab.xyz/hack-rules`
+  rules: `http://uclab.xyz/hack-rules`,
+  submit: ``
 };
 
 export const navInfo = [
