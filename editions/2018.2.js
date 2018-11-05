@@ -187,6 +187,11 @@ export const promotersInfo = {
       name: "Taqtile"
     },
     {
+      webURL: "https://www.taqtile.com.br",
+      imgURL: require("@/assets/sponsors/hash_logo.png"),
+      name: "Taqtile"
+    },
+    {
       webURL: "https://www.udemy.com.br",
       imgURL: require("@/assets/sponsors/udemy_logo_vertical_TM_RGB.png"),
       name: "Udemy"
