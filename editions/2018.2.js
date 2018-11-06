@@ -187,9 +187,14 @@ export const promotersInfo = {
       name: "Taqtile"
     },
     {
-      webURL: "https://www.taqtile.com.br",
+      webURL: "http://www.intelie.com.br",
+      imgURL: require("@/assets/sponsors/intelie_logo.png"),
+      name: "Intelie"
+    },
+    {
+      webURL: "https://www.hash.com.br/",
       imgURL: require("@/assets/sponsors/hash_logo.png"),
-      name: "Taqtile"
+      name: "Hash"
     },
     {
       webURL: "https://www.udemy.com.br",
@@ -230,6 +235,11 @@ export const promotersInfo = {
       webURL: "https://www.ime.usp.br/imejr/",
       imgURL: require("@/assets/supporters/imejr-logo-rgb-alpha.svg"),
       name: "IME Jr."
+    },
+    {
+      webURL: "http://www.prg.usp.br",
+      imgURL: require("@/assets/supporters/prg-logo.png"),
+      name: "PRG-USP"
     },
     {
       webURL: "",
