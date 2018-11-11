@@ -15,7 +15,7 @@ export const headerInfo = {
   location: `Instituto de Matemática e Estatística da USP`,
   subscriptions: `http://uclab.xyz/hack-subscribe`,
   rules: `http://uclab.xyz/hack-rules`,
-  submit: ``
+  submit: `http://uclab.xyz/hack-submission`
 };
 
 export const navInfo = [
