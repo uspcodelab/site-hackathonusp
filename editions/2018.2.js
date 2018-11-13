@@ -168,7 +168,7 @@ export const promotersInfo = {
     },
     {
       webURL: "https://banco.bradesco/",
-      imgURL: require("@/assets/sponsors/bradesco.svg"),
+      imgURL: require("@/assets/sponsors/next_digital_whitebg.png"),
       name: "Bradesco"
     },
     {
@@ -187,14 +187,14 @@ export const promotersInfo = {
       name: "Taqtile"
     },
     {
-      webURL: "http://www.intelie.com.br",
-      imgURL: require("@/assets/sponsors/intelie_logo.png"),
-      name: "Intelie"
-    },
-    {
       webURL: "https://www.hash.com.br/",
       imgURL: require("@/assets/sponsors/hash_logo.png"),
       name: "Hash"
+    },
+    {
+      webURL: "http://www.intelie.com.br",
+      imgURL: require("@/assets/sponsors/intelie_logo.png"),
+      name: "Intelie"
     },
     {
       webURL: "https://www.udemy.com.br",
